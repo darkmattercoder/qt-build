@@ -7,26 +7,28 @@ branches:
   - deploy
 env:
   global:
-  - secure: Jik2SyoO+j2cNSl2dff0opIyilDhHZrcoHOHhnpzpfAOmuTLuGEtDyj3nUAUhptCUKrVd1LCW25G2/KiQJrOwZ0qdcjzhmdwBefxRieD/UzxOQIR98tDZt2eU1knxZ18fScypzF85K9yJPFpjd5B/AdpzINGN9Dz7ksVuLhlin/+uCK91YCHHDI/cJFxgy0FrebgXTqom7EE3ljC/oA6lOvQCB5GUlZGxVyaw1zt48P0ZB1wbxgzfHPXnJXk/YOdpeBVkyvbaoXKpXnxFKRp+oVyAr6JwXbLS/PiuLQSoL+CePb+hPKnJAU4ekD+awvCI3UKknAfPjslETAQcpxeBTcVdavbEq8mu5gkiQ8NQbfVSRokAxKz5ScSeHj6+kU7WupxU0RUmw6N5edGop/10YRRDBPNt7ckR+SrC2Fnhz0DOcuZKKBYsmjPcdVRP8XlqqzS6VI6RYV/sJTk5g5LiWXE142942iWreJ+uJpSONk646deC6h444c/IEoVHldwQv9dHkzqVtoNn7ekDS6ha2JL3FoLyh5kr0B3DZAC8yi3j/Byj76xAiH64zjjC5N1lz6vKq/Fr7g8zPGxTM1TskrI2LiLh99yblTmB7Yt+77jVg54wSsiyYdyec6Uxf/kJwipkSbKYV2KrQnf9rXzwpNVk+VE+agH3GkyK1oT458=
-  - secure: GlcjFiiyAF5w8/TYqgtexzVIaoN1ohRSNrx80P6+5vB9eTU7P3vJlHsCNkRJUkEkTfgYK0GZnSE4psoVS7eGJXQ0pL0h+ge9gc8wfSGWK3WxT2jtTqnMuU9Uy2j9eawteWnQFzeMH/56fagAIZ5MAPgIO3y1vDe5u6CIQs3+gGOTiusY/SB7L3qQfRmZ5xWk7dIzxHC2Vh3mFchrRayb+bn/wr4RJ20HdwkDaKPdp8jr7JQ6Ux3FAU61IVPflmOkhHyqDpQsZ0/RjuC/Lw7b5bC0NSKCtV8Avj2Jp3Qy8+OLUCm/J5U4IByF8OlXpHUudfO7uz0oEHzNDUZRU+HMdb886vmYb1DRBt5x1/TgFN1uMutKiizVIoPZCtkAC9Y+wXx60D41BNknWB8/XXqJHWVE5aytTIau3THYoJ9lnsLxFzqF6wqxiam6JCbO8gIglEtMRk2BLSZXnA12PkBIwHM4bO/gc3TIss7r9tu6AS0/QTAWAN5r7QTyK9+w9rCtvin173rRNyv4zmp/0Q1Rnc0RsGg/l7J7+xP2q2u9FRxXdxDPe7+MM3EnKhl8HHb+aHMRQRb1xdof6vZrL3p3vQ+Z6jZrEmhfhrT1P/vC9pzlBkOhbjwS10uE+dooGqNFm43oW5vKw2UuSQpZ1qfYpt7KADUKqKab4wiSk9J8FM0=
-  - secure: CrZnQZH02EhtrgNqTQtluihZMbVgpmpz8e6K3nVk2XYS6kuoW3zHOd5PlRTgt+eHafaWrhqig85wsAdWXD1mu2pDfi4cdtMDA7AzQK/Fx4Bj0uspyIoVjLOZG6ng5LgkgtF/lLXIo1OThtbZnYd/hKtitAXqRCAwjchgMLK2u22xhw8GOY4PPpVOAW9gHQulo6hNvTLUjBWg1UZy4/YpR7nzulngJ1NZ+9zzXSHqa+p/smb6nJjJ20RDY/TtTRMDWnuSFMMYmshqMdNWQjvauK4w/G2naYlxRfSzLmNGyH1o47rO8tmwuPry9AfoMjIzOF5SGqiMEqfKllPCdggMgD3QKzQQyrGnG1scUMroZj9kGX+mMtlIuJDRMudk+Dr3bgYDL2jeUGkVkH9ViS7vN037/Yhc4iI2xm+aw3dFmw9at4TtoqBr4dhqCq1r23aS2coxDurulRgMUDA6dgywc/Y9fzXEpNOYX0VfXNCcRKjbc5h3q6JcQINLc2x3wYogHISCMW290PDx2PX8NU3glV5TTmJGjJqXkMCpqmyic2sfI1JLz6sceUMvFYzR7edMudWy83YlhIbatY2ula7thXqVy2xfXBS3qWc8T8k7h1G9WpepJW/y+V0B7zwfz1hVFj7pwRu0a4q6GXVq5/0Y/frlzCfmkw36OJvj+j/yG9s=
+  - DOCKER_USERNAME=darkmattercoder
+  - secure: Bz/3Zzw3D7lhK61YiHHsniQAlQgDJ4XtpTg/QBjapM/I0vuBnNMKFW8s7TFyjqBhnKcAq41YHG+KIjnnTS5pD8VgDM5U//PW/rJJp/0Q+bQmL5ZG0HOzERNYUWCUtpBdrgqwmTxKvmsuQzzNruR4ERtraCuKCK0U3bAtpcNPAhwNbdfSd03SZaEc+aqEKfxr+gxZo8m/dH8qJMVSttd9B/PMKupmddcxbUHJa04nN0iqdMPgxi2kx/H7jWcoo2MIrCij1vynx0pO5u/4P3v7wfngz0PZwaqjAvDvshAJULkmY4nHK++RRCJ8Ml4A7pgM3XFCc3FcXEQQdfeZfeo9JnhYDnYn2gfJjLwjX+LtPmlTy2lhF4dYoDWg7YKNUufeA+a+qw09500r00mn8P34GTVhvkrnBlK+adz0r0HZ6qfRmRLNu7JpOGx1Saat+8TeoYJ8O+q7hgYHMVqxgU1XZmUdU6BMg0RVNMU3nTn87o4UmGUn8IX7bdYJ6iFxYIL8xQJQCNXAs66v4i4B6yVfSvOsvArhro6x3+EyPXRLT+p+cnGKiNyMqBmjTlZd2UTujx3ziawE9grxHdoSkin8neyYVrEG1CoIJqC+J6nnIWHk8sm89HHKxhngQqZKiuRYi0TOYdRpKGJH3tJDqpVk66VQr3nO4ciaOCnJlKSk8Gc=
+  - secure: cCBqL4SXhRodrrZydl8KarefizmhJMyWRuywleeIaluiIt1OM1S2JpwAg2tWNN3pjrLhXQIOeSYR4Q6R4eaVp9YcmWB6gkiYRdnjWHsaufnviz0Dz2KJrSMDAcMAOFWIQwEmXxI2znAKitBnpjAZOVgOqFKeLfAFhDPlQbM4S++n0rKUL4sMCrrUv+DskPGlreH0LFzHzL3OnzkKBRg73bQ8sXAnwJZKU1VV+xNetBKB4CQwS2jPcfHUZC7OJJB0795uGCC8DiTA+VY+T8frpeH7NhD6gAyEwq5QG5oO7l+sVBFfWWJWX8Zi8qCBq4KAPxv48UHPqc/DlawDyszSC6PpTZv4slvn55gvh5lIrUJp4/29Zcr+0MFj9J+3/j/d9YldZ0lqjPisAM44h2TXQs7jnu4o1YMlZQQ7q2yxyDGG/SMe4P+wJLQgOdWUmSqdAyl3D1krrfVPV3LiEYgDugsYVZP40Ooh45S8t9pc3AIUP+R1nQT3UZ/2Nkx6WDTMzkXVcRYEA3t50oX+QzOpX6oyuThhS+N1sbPH9sQbrhLGjYAIHmF/Vt9JsYeP84ju7rZg3ml6WT0TBVioAPfDbEDQZoCKBz8P+wMqR13jcrAH837sEHttrP8keaZ1An5pvZOG9THeKiIagH/hwlVkcgg9AzPz2YGq96f2C6rnE70=
 before_install:
 - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 - docker pull darkmattercoder/qt-build:latest || true
 - docker pull darkmattercoder/qt-build:builder || true
 install:
-- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder --build-arg
-  CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder .
-- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder --build-arg
-  CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:latest .
+- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder
+  --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder
+  .
+- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder
+  --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:latest
+  .
 script:
 - docker push darkmattercoder/qt-build:builder
 - docker push darkmattercoder/qt-build:latest
 after_success:
-  - export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
-  - export GIT_COMMITTER_NAME="Travis CI bot"
-  - git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
-  - git fetch --all || exit
-  - git checkout master || exit
-  - git rebase deploy || exit
-  - git push https://${GITHUB_ACCESS_TOKEN}@github.com/darkmattercoder/qt-build.git
+- export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
+- export GIT_COMMITTER_NAME="Travis CI bot"
+- git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
+- git fetch --all || exit
+- git checkout master || exit
+- git rebase deploy || exit
+- git push https://${GITHUB_ACCESS_TOKEN}@github.com/darkmattercoder/qt-build.git
