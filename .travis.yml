@@ -1,0 +1,32 @@
+language:
+- generic
+services:
+- docker
+branches:
+  only:
+  - deploy
+env:
+  global:
+  - DOCKER_USERNAME=darkmattercoder
+  - secure: GlcjFiiyAF5w8/TYqgtexzVIaoN1ohRSNrx80P6+5vB9eTU7P3vJlHsCNkRJUkEkTfgYK0GZnSE4psoVS7eGJXQ0pL0h+ge9gc8wfSGWK3WxT2jtTqnMuU9Uy2j9eawteWnQFzeMH/56fagAIZ5MAPgIO3y1vDe5u6CIQs3+gGOTiusY/SB7L3qQfRmZ5xWk7dIzxHC2Vh3mFchrRayb+bn/wr4RJ20HdwkDaKPdp8jr7JQ6Ux3FAU61IVPflmOkhHyqDpQsZ0/RjuC/Lw7b5bC0NSKCtV8Avj2Jp3Qy8+OLUCm/J5U4IByF8OlXpHUudfO7uz0oEHzNDUZRU+HMdb886vmYb1DRBt5x1/TgFN1uMutKiizVIoPZCtkAC9Y+wXx60D41BNknWB8/XXqJHWVE5aytTIau3THYoJ9lnsLxFzqF6wqxiam6JCbO8gIglEtMRk2BLSZXnA12PkBIwHM4bO/gc3TIss7r9tu6AS0/QTAWAN5r7QTyK9+w9rCtvin173rRNyv4zmp/0Q1Rnc0RsGg/l7J7+xP2q2u9FRxXdxDPe7+MM3EnKhl8HHb+aHMRQRb1xdof6vZrL3p3vQ+Z6jZrEmhfhrT1P/vC9pzlBkOhbjwS10uE+dooGqNFm43oW5vKw2UuSQpZ1qfYpt7KADUKqKab4wiSk9J8FM0=
+  - secure: CrZnQZH02EhtrgNqTQtluihZMbVgpmpz8e6K3nVk2XYS6kuoW3zHOd5PlRTgt+eHafaWrhqig85wsAdWXD1mu2pDfi4cdtMDA7AzQK/Fx4Bj0uspyIoVjLOZG6ng5LgkgtF/lLXIo1OThtbZnYd/hKtitAXqRCAwjchgMLK2u22xhw8GOY4PPpVOAW9gHQulo6hNvTLUjBWg1UZy4/YpR7nzulngJ1NZ+9zzXSHqa+p/smb6nJjJ20RDY/TtTRMDWnuSFMMYmshqMdNWQjvauK4w/G2naYlxRfSzLmNGyH1o47rO8tmwuPry9AfoMjIzOF5SGqiMEqfKllPCdggMgD3QKzQQyrGnG1scUMroZj9kGX+mMtlIuJDRMudk+Dr3bgYDL2jeUGkVkH9ViS7vN037/Yhc4iI2xm+aw3dFmw9at4TtoqBr4dhqCq1r23aS2coxDurulRgMUDA6dgywc/Y9fzXEpNOYX0VfXNCcRKjbc5h3q6JcQINLc2x3wYogHISCMW290PDx2PX8NU3glV5TTmJGjJqXkMCpqmyic2sfI1JLz6sceUMvFYzR7edMudWy83YlhIbatY2ula7thXqVy2xfXBS3qWc8T8k7h1G9WpepJW/y+V0B7zwfz1hVFj7pwRu0a4q6GXVq5/0Y/frlzCfmkw36OJvj+j/yG9s=
+before_install:
+- echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+- docker pull darkmattercoder/qt-build:latest || true
+- docker pull darkmattercoder/qt-build:builder || true
+install:
+- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder --build-arg
+  CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder .
+- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder --build-arg
+  CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:latest .
+script:
+- docker push darkmattercoder/qt-build:builder
+- docker push darkmattercoder/qt-build:latest
+after_success:
+  - export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
+  - export GIT_COMMITTER_NAME="Travis CI bot"
+  - git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
+  - git fetch --all || exit
+  - git checkout master || exit
+  - git rebase deploy || exit
+  - git push https://${GITHUB_ACCESS_TOKEN}@github.com/darkmattercoder/qt-build.git
