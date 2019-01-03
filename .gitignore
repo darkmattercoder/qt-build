@@ -1,1 +1,3 @@
 tests/*/build
+tests/build
+tests/tests.pro
