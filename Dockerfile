@@ -33,7 +33,7 @@ RUN apt-get update && apt-get dist-upgrade && apt-get -y --no-install-recommends
 	bash \
 	&& apt-get -qq clean \
 	&& rm -rf /var/lib/apt/lists/* \
-	&& echo -e "#!/bin/sh\nls -lah" > /usr/local/bin/ll && chmod +x /usr/local/bin/ll
+	&& printf "#!/bin/sh\nls -lah" > /usr/local/bin/ll && chmod +x /usr/local/bin/ll
 
 # Adding regular user
 RUN if [ ${USER_GID} ]; then \
@@ -94,8 +94,6 @@ COPY entrypoint.sh ${ENTRYPOINT_DIR}
 
 RUN chmod +x ${ENTRYPOINT_DIR}/entrypoint.sh
 
-# setting volume up with good permissions
-RUN mkdir -p ${APP_BUILDDIR} && chmod 1777 ${APP_BUILDDIR}
 VOLUME ["${APP_BUILDDIR}"]
 
 USER ${QT_USERNAME}
