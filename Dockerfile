@@ -61,8 +61,8 @@ RUN curl -sSL https://download.qt.io/official_releases/qt/${QT_VERSION_MAJOR}.${
 WORKDIR ${QT_BUILD_DIR}
 
 # Configure, make, install
-RUN ../configure -prefix ${QT_PREFIX} -opensource -confirm-license -nomake examples -nomake tests
-#-no-feature-geoservices_mapboxgl
+ADD buildconfig/configure-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.sh configure.sh
+RUN chmod +x ./configure.sh && ./configure.sh
 
 # Possibility to make outputs less verbose when required for a ci build
 ARG CI_BUILD=

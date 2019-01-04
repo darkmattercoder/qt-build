@@ -6,25 +6,34 @@ branches:
   only:
   - deploy
 env:
+  matrix:
+    include:
+    - name: "5.11.3"
+      env:
+        - QT_VERSION_MAJOR=5
+        - QT_VERSION_MINOR=11
+        - QT_VERSION_PATCH=3
+    - name: "5.12.0"
+      env:
+        - QT_VERSION_MAJOR=5
+        - QT_VERSION_MINOR=12
+        - QT_VERSION_PATCH=0
   global:
   - DOCKER_USERNAME=darkmattercoder
   - secure: Bz/3Zzw3D7lhK61YiHHsniQAlQgDJ4XtpTg/QBjapM/I0vuBnNMKFW8s7TFyjqBhnKcAq41YHG+KIjnnTS5pD8VgDM5U//PW/rJJp/0Q+bQmL5ZG0HOzERNYUWCUtpBdrgqwmTxKvmsuQzzNruR4ERtraCuKCK0U3bAtpcNPAhwNbdfSd03SZaEc+aqEKfxr+gxZo8m/dH8qJMVSttd9B/PMKupmddcxbUHJa04nN0iqdMPgxi2kx/H7jWcoo2MIrCij1vynx0pO5u/4P3v7wfngz0PZwaqjAvDvshAJULkmY4nHK++RRCJ8Ml4A7pgM3XFCc3FcXEQQdfeZfeo9JnhYDnYn2gfJjLwjX+LtPmlTy2lhF4dYoDWg7YKNUufeA+a+qw09500r00mn8P34GTVhvkrnBlK+adz0r0HZ6qfRmRLNu7JpOGx1Saat+8TeoYJ8O+q7hgYHMVqxgU1XZmUdU6BMg0RVNMU3nTn87o4UmGUn8IX7bdYJ6iFxYIL8xQJQCNXAs66v4i4B6yVfSvOsvArhro6x3+EyPXRLT+p+cnGKiNyMqBmjTlZd2UTujx3ziawE9grxHdoSkin8neyYVrEG1CoIJqC+J6nnIWHk8sm89HHKxhngQqZKiuRYi0TOYdRpKGJH3tJDqpVk66VQr3nO4ciaOCnJlKSk8Gc=
   - secure: cCBqL4SXhRodrrZydl8KarefizmhJMyWRuywleeIaluiIt1OM1S2JpwAg2tWNN3pjrLhXQIOeSYR4Q6R4eaVp9YcmWB6gkiYRdnjWHsaufnviz0Dz2KJrSMDAcMAOFWIQwEmXxI2znAKitBnpjAZOVgOqFKeLfAFhDPlQbM4S++n0rKUL4sMCrrUv+DskPGlreH0LFzHzL3OnzkKBRg73bQ8sXAnwJZKU1VV+xNetBKB4CQwS2jPcfHUZC7OJJB0795uGCC8DiTA+VY+T8frpeH7NhD6gAyEwq5QG5oO7l+sVBFfWWJWX8Zi8qCBq4KAPxv48UHPqc/DlawDyszSC6PpTZv4slvn55gvh5lIrUJp4/29Zcr+0MFj9J+3/j/d9YldZ0lqjPisAM44h2TXQs7jnu4o1YMlZQQ7q2yxyDGG/SMe4P+wJLQgOdWUmSqdAyl3D1krrfVPV3LiEYgDugsYVZP40Ooh45S8t9pc3AIUP+R1nQT3UZ/2Nkx6WDTMzkXVcRYEA3t50oX+QzOpX6oyuThhS+N1sbPH9sQbrhLGjYAIHmF/Vt9JsYeP84ju7rZg3ml6WT0TBVioAPfDbEDQZoCKBz8P+wMqR13jcrAH837sEHttrP8keaZ1An5pvZOG9THeKiIagH/hwlVkcgg9AzPz2YGq96f2C6rnE70=
 before_install:
 - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-- docker pull darkmattercoder/qt-build:latest || true
-- docker pull darkmattercoder/qt-build:builder || true
+- docker pull darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
+- docker pull darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
 install:
-- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder
-  --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder
-  .
-- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder
-  --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:latest .
+- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
+- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
 script:
 - tests/generate_tests.py || travis_terminate 1;
-- docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:latest build || travis_terminate 1;
-- set -e && docker push darkmattercoder/qt-build:latest
-- set -e && docker push darkmattercoder/qt-build:builder
+- docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH build || travis_terminate 1;
+- set -e && docker push darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
+- set -e && docker push darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
 after_success:
 - export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
 - export GIT_COMMITTER_NAME="Travis CI bot"
