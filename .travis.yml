@@ -21,7 +21,10 @@ install:
 - travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder
   --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:latest .
 script:
-- tests/generate_tests.py && docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:latest build && docker push darkmattercoder/qt-build:builder && docker push darkmattercoder/qt-build:latest
+- tests/generate_tests.py || travis_terminate 1;
+- docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:latest build || travis_terminate 1;
+- set -e && docker push darkmattercoder/qt-build:latest
+- set -e && docker push darkmattercoder/qt-build:builder
 after_success:
 - export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
 - export GIT_COMMITTER_NAME="Travis CI bot"
