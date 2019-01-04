@@ -6,18 +6,12 @@ branches:
   only:
   - deploy
 env:
-  matrix:
-    include:
-      - name: "5.11.3"
-        env:
-          - QT_VERSION_MAJOR=5
-          - QT_VERSION_MINOR=11
-          - QT_VERSION_PATCH=3
-      - name: "5.12.0"
-        env:
-          - QT_VERSION_MAJOR=5
-          - QT_VERSION_MINOR=12
-          - QT_VERSION_PATCH=0
+  - QT_VERSION_MAJOR=5
+  - QT_VERSION_MINOR=11
+  - QT_VERSION_PATCH=3
+  - QT_VERSION_MAJOR=5
+  - QT_VERSION_MINOR=12
+  - QT_VERSION_PATCH=0
   global:
   - DOCKER_USERNAME=darkmattercoder
   - secure: Bz/3Zzw3D7lhK61YiHHsniQAlQgDJ4XtpTg/QBjapM/I0vuBnNMKFW8s7TFyjqBhnKcAq41YHG+KIjnnTS5pD8VgDM5U//PW/rJJp/0Q+bQmL5ZG0HOzERNYUWCUtpBdrgqwmTxKvmsuQzzNruR4ERtraCuKCK0U3bAtpcNPAhwNbdfSd03SZaEc+aqEKfxr+gxZo8m/dH8qJMVSttd9B/PMKupmddcxbUHJa04nN0iqdMPgxi2kx/H7jWcoo2MIrCij1vynx0pO5u/4P3v7wfngz0PZwaqjAvDvshAJULkmY4nHK++RRCJ8Ml4A7pgM3XFCc3FcXEQQdfeZfeo9JnhYDnYn2gfJjLwjX+LtPmlTy2lhF4dYoDWg7YKNUufeA+a+qw09500r00mn8P34GTVhvkrnBlK+adz0r0HZ6qfRmRLNu7JpOGx1Saat+8TeoYJ8O+q7hgYHMVqxgU1XZmUdU6BMg0RVNMU3nTn87o4UmGUn8IX7bdYJ6iFxYIL8xQJQCNXAs66v4i4B6yVfSvOsvArhro6x3+EyPXRLT+p+cnGKiNyMqBmjTlZd2UTujx3ziawE9grxHdoSkin8neyYVrEG1CoIJqC+J6nnIWHk8sm89HHKxhngQqZKiuRYi0TOYdRpKGJH3tJDqpVk66VQr3nO4ciaOCnJlKSk8Gc=
