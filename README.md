@@ -1,6 +1,8 @@
 # qt-build
 
 [![Build Status](https://travis-ci.com/darkmattercoder/qt-build.svg?branch=deploy)](https://travis-ci.com/darkmattercoder/qt-build)
+[![](https://images.microbadger.com/badges/image/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build "Get your own version badge on microbadger.com")
 
 A (nearly) full qt build environment docker. Using multi-stage build to decouple build from actual image.
 Can build a `qmake` project with one single command.
