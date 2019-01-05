@@ -5,6 +5,10 @@ services:
 branches:
   only:
   - deploy
+before_install:
+  - sudo apt-get install -y python3-pip
+  - pip3 install yaml
+  - pip3 install docker
 env:
   global:
     - DOCKER_USERNAME=darkmattercoder
