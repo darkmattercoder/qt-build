@@ -16,7 +16,7 @@ stages:
 jobs:
   include:
     - stage: deploy
-      matrix:
+      env:
         - QT_VERSION_MAJOR=5 QT_VERSION_MINOR=11 QT_VERSION_PATCH=2
         - QT_VERSION_MAJOR=5 QT_VERSION_MINOR=12 QT_VERSION_PATCH=0
       script:
