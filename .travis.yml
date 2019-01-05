@@ -13,6 +13,11 @@ env:
   matrix:
     - QT_VERSION_MAJOR=5 QT_VERSION_MINOR=11 QT_VERSION_PATCH=3
     - QT_VERSION_MAJOR=5 QT_VERSION_MINOR=12 QT_VERSION_PATCH=0
+stages:
+  - prepare
+  - build
+  - testing
+  - deploy
 jobs:
     include:
       stage: prepare
@@ -24,7 +29,7 @@ jobs:
       script:
         - travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
         - travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
-      stage: test
+      stage: testing
       script:
         - tests/generate_tests.py || travis_terminate 1;
         - docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH build || travis_terminate 1;
