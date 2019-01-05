@@ -28,8 +28,8 @@ script:
   - docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH build || travis_terminate 1;
   - docker push darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1;
   - docker push darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1;
-  - ci/tag_image.py darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1;
-  - ci/push_images.py darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
+  - python3 ci/tag_image.py darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1;
+  - python3 ci/push_images.py darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
 jobs:
   include:
     - stage: merge
