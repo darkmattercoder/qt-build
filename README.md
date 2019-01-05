@@ -5,7 +5,8 @@
 A (nearly) full qt build environment docker. Using multi-stage build to decouple build from actual image.
 Can build a `qmake` project with one single command.
 
-Find it also on [https://hub.docker.com/r/darkmattercoder/qt-build](dockerhub).
+Find the images on [https://hub.docker.com/r/darkmattercoder/qt-build](dockerhub).
+Find the sources on [https://github.com/darkmattercoder/qt-build](github)
 
 ## Usage (short)
 
@@ -27,7 +28,7 @@ Generally you will find full version tags like `5.11.3` as well as minor version
 
 The `build` command for docker run will build any qmake project that is mounted to `/var/build`. However, you can get an interactive session as well for manual adjustments or examinations:
 
-	docker run --rm -it -u $UID -v /path/to/your/project/directory:/var/build darkmattercoder/qt:build:latest bash
+	docker run --rm -it -u $UID -v /path/to/your/project/directory:/var/build darkmattercoder/qt-build:latest bash
 
 If you pass additional arguments to `build` they will be taken into account as arguments to `qmake` which allows you to modify your build if needed.
 
@@ -73,7 +74,7 @@ For opening pull requests, please keep the following in mind:
 * Pull requests for the `master` branch will be rejected
 * Pull requests must be made for the `deploy` branch only
 * Pull requests that alter the build configuration or the dependencies in the base image to compile something that did not compile before have to provide a test that represents the changes. The test, when added without changes to build configs or docker file has to fail.
-* Pull requests should be made with the fact in mind, that we want to provide a general multi purpose build environment that should not get bloated more than necessary. 
+* Pull requests should be made with the fact in mind, that we want to provide a general multi purpose build environment that should not get bloated more than necessary.
 
 ## License
 
