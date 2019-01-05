@@ -5,8 +5,8 @@ branches:
   only:
   - deploy
 before_install:
-  - pip install docker
-  - pip install pyaml
+  - python3 -m pip install docker
+  - python3 -m install pyaml
 env:
   global:
     - DOCKER_USERNAME=darkmattercoder
