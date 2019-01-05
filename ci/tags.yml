@@ -1,0 +1,7 @@
+# be sure to use the dashes even for one element, only then python parses it as a list
+5.10.0:
+5.11.3:
+  - "5.11"
+5.12.0:
+  - "5.12"
+  - latest
