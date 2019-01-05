@@ -9,6 +9,7 @@ branches:
 before_install:
   - pip install docker
   - pip install pyaml
+  - pip install fire
 env:
   global:
     - DOCKER_USERNAME=darkmattercoder
