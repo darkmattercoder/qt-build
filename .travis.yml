@@ -1,13 +1,14 @@
-language:
-- generic
+language: python
+python:
+  - "3.7"
 services:
 - docker
 branches:
   only:
   - deploy
 before_install:
-  - sudo apt-get install -y python3-pip python3-yaml
-  - pip3 install docker
+  - pip install docker
+  - pip install pyaml
 env:
   global:
     - DOCKER_USERNAME=darkmattercoder
