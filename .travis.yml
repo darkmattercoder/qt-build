@@ -13,23 +13,30 @@ env:
   matrix:
     - QT_VERSION_MAJOR=5 QT_VERSION_MINOR=11 QT_VERSION_PATCH=3
     - QT_VERSION_MAJOR=5 QT_VERSION_MINOR=12 QT_VERSION_PATCH=0
-before_install:
-- echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-- docker pull darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
-- docker pull darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
-install:
-- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
-- travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
-script:
-- tests/generate_tests.py || travis_terminate 1;
-- docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH build || travis_terminate 1;
-- set -e && docker push darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
-- set -e && docker push darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
-after_success:
-- export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
-- export GIT_COMMITTER_NAME="Travis CI bot"
-- git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
-- git fetch --all || exit
-- git checkout master || exit
-- git rebase deploy || exit
-- git push https://${GITHUB_ACCESS_TOKEN}@github.com/darkmattercoder/qt-build.git
+jobs:
+    include:
+      stage: prepare
+      script:
+        - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+        - docker pull darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
+        - docker pull darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
+      stage: build
+      script:
+        - travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
+        - travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH .
+      stage: test
+      script:
+        - tests/generate_tests.py || travis_terminate 1;
+        - docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH build || travis_terminate 1;
+      stage: deploy
+      script:
+        - set -e && docker push darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
+        - set -e && docker push darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
+      after_success:
+        - export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
+        - export GIT_COMMITTER_NAME="Travis CI bot"
+        - git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
+        - git fetch --all || exit
+        - git checkout master || exit
+        - git rebase deploy || exit
+        - git push https://${GITHUB_ACCESS_TOKEN}@github.com/darkmattercoder/qt-build.git
