@@ -22,20 +22,21 @@ stages:
   - test
   - merge
 script:
-  - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin  || travis_terminate 1;
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin  || travis_terminate 1; fi'
   - docker pull darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
   - docker pull darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || true
   - travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=builder -t darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH . || travis_terminate 1;
   - travis_wait 180 docker build --pull --cache-from darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH --build-arg QT_VERSION_MAJOR=$QT_VERSION_MAJOR --build-arg QT_VERSION_MINOR=$QT_VERSION_MINOR --build-arg QT_VERSION_PATCH=$QT_VERSION_PATCH --build-arg CI_BUILD=1 --build-arg CORE_COUNT=2 --target=qt -t darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH . || travis_terminate 1;
   - tests/generate_tests.py || travis_terminate 1;
   - docker run --rm -u $UID -v $PWD/tests:/var/build darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH build || travis_terminate 1;
-  - docker push darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1;
-  - docker push darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1;
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker push darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then docker push darkmattercoder/qt-build:builder-$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1; fi'
   - python ci/tag_image.py darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH || travis_terminate 1;
-  - python ci/push_images.py darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then python ci/push_images.py darkmattercoder/qt-build:$QT_VERSION_MAJOR.$QT_VERSION_MINOR.$QT_VERSION_PATCH; fi'
 jobs:
   include:
     - stage: merge
+      if: type != pull_request
       script:
         - export GIT_COMMITTER_EMAIL="travis-ci-bot@jochenbauer.net"
         - export GIT_COMMITTER_NAME="Travis CI bot"
