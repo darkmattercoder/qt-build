@@ -38,7 +38,7 @@ If you pass additional arguments to `build` they will be taken into account as a
 
 	git clone https://github.com/darkmattercoder/qt-build.git
 	cd qt-build
-	docker build --build-arg QT_VERSION_MAJOR=X QT_VERSION_MINOR=Y QT_VERSION_PATCH=Z --build-arg CORE_COUNT=N --target=qt -t qt-build:X.Y.Z
+	docker build --build-arg QT_VERSION_MAJOR=X --build-arg QT_VERSION_MINOR=Y --build-arg QT_VERSION_PATCH=Z --build-arg CORE_COUNT=N --target=qt -t qt-build:X.Y.Z
 
 Replace `X,Y,Z` according to your desired qt version. You have to provide a build configuration as a very simple `configure`-script in the `buildconfig` directory to make the build succeed. The script has to be named after your desired `QT` version, e.g. `configure-5.11.3.sh`. Example content:
 
