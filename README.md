@@ -59,7 +59,13 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 
 ## Available tags
 
-See the list in the dockerhub repo. More details will be added later.
+| Tags | Size |
+| ------------- | ------------- |
+| `latest`, `5.12`, `5.12.0` | ![Latest](https://img.shields.io/microbadger/image-size/darkmattercoder/qt-build/latest.svg) |
+| `5.11`, `5.11.3` | ![5.11](https://img.shields.io/microbadger/image-size/darkmattercoder/qt-build/5.11.svg) |
+| `5.11.2` | ![5.11.2](https://img.shields.io/microbadger/image-size/darkmattercoder/qt-build/5.11.2.svg) |
+| `5.11.1` | ![5.11.1](https://img.shields.io/microbadger/image-size/darkmattercoder/qt-build/5.11.1.svg) |
+| `5.11.0` | ![5.11.0](https://img.shields.io/microbadger/image-size/darkmattercoder/qt-build/5.11.0.svg) |
 
 ## Contributions
 
