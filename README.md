@@ -62,7 +62,7 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 See the list in the dockerhub repo. More details will be added later.
 
 ## Contributions
-
+<!-- gjij -->
 I highly appreciate any contributions to this project. I will add contribution guidelines later on. As a short summary here is what you could do:
 
 * Provide new or changed documentation
