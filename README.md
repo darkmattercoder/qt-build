@@ -78,3 +78,4 @@ For opening pull requests, please keep the following in mind:
 ## License
 
 Any directly written content in this repo is licensed under the `GPL v3`. Software parts that are produced during the image build and resulting docker images are of course a composition of components that probably carry their own licenses.
+<!-- test comments -->
