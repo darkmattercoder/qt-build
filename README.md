@@ -20,7 +20,7 @@ Download `qt-build` from dockerhub:
 
 Provide your qmake project that you want to build in a separate directory and build it with `qt-build`:
 
-	docker run --rm -u $UID -v /path/to/your/project/directory:/var/build darkmattercoder/qt:build:latest build
+	docker run --rm -u $UID -v /path/to/your/project/directory:/var/build darkmattercoder/qt-build:latest build
 
 You will find your built project in a new sub directory named `build` in your project directory. You can safely omit the `-u $UID` part in most environments, where your user has the standard `UID=1000`.
 
