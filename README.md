@@ -65,7 +65,9 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 | [![][ver_img_5.11]][lnk_5.11] [![][ver_img_5.11.3]][lnk_5.11.3]                                   | [![][size_img_5.11.3]][lnk_5.11.3] |
 | [![][ver_img_5.11.2]][lnk_5.11.2]                                                                 | [![][size_img_5.11.2]][lnk_5.11.2] |
 | [![][ver_img_5.11.1]][lnk_5.11.1]                                                                 | [![][size_img_5.11.1]][lnk_5.11.1] |
-| [![][ver_img_5.11.1]][lnk_5.11.0]                                                                 | [![][size_img_5.11.1]][lnk_5.11.0] |
+| [![][ver_img_5.11.0]][lnk_5.11.0]                                                                 | [![][size_img_5.11.0]][lnk_5.11.0] |
+| [![][ver_img_5.10]][lnk_5.10] [![][ver_img_5.10.1]][lnk_5.10.1]                                   | [![][size_img_5.10.1]][lnk_5.10.1] |
+| [![][ver_img_5.10.1]][lnk_5.10.0]                                                                 | [![][size_img_5.10.1]][lnk_5.10.0] |
 
 [ver_img_latest]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:latest.svg
 [size_img_latest]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:latest.svg
@@ -98,6 +100,18 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 [ver_img_5.11.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.11.0.svg
 [size_img_5.11.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.11.0.svg
 [lnk_5.11.0]: "https://microbadger.com/images/darkmattercoder/qt-build:5.11.0"
+
+[ver_img_5.10]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.10.svg
+[size_img_5.10]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.10.svg
+[lnk_5.10]: "https://microbadger.com/images/darkmattercoder/qt-build:5.10"
+
+[ver_img_5.10.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.10.1.svg
+[size_img_5.10.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.10.1.svg
+[lnk_5.10.1]: "https://microbadger.com/images/darkmattercoder/qt-build:5.10.1"
+
+[ver_img_5.10.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.10.0.svg
+[size_img_5.10.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.10.0.svg
+[lnk_5.10.0]: "https://microbadger.com/images/darkmattercoder/qt-build:5.10.0"
 
 ## Contributions
 
