@@ -18,7 +18,10 @@ ENV QT_VERSION_MAJOR=${QT_VERSION_MAJOR}
 ENV QT_VERSION_MINOR=${QT_VERSION_MINOR}
 ENV QT_VERSION_PATCH=${QT_VERSION_PATCH}
 ENV QT_BUILD_ROOT=/tmp/qt_build
-ENV QT_BUILD_DIR=${QT_BUILD_ROOT}/qt-everywhere-src-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}/build
+# They switched the tarball naming scheme from 5.9 to 5.10. This ARG shall provide a possibility to reflect that
+ARG QT_TARBALL_NAMING_SCHEME=everywhere
+ENV QT_TARBALL_NAMING_SCHEME=${QT_TARBALL_NAMING_SCHEME}
+ENV QT_BUILD_DIR=${QT_BUILD_ROOT}/qt-${QT_TARBALL_NAMING_SCHEME}-src-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}/build
 ENV QT_PREFIX=/usr/local
 
 # Install all build dependencies
@@ -57,9 +60,6 @@ LABEL stage=qt-build-builder
 
 # Installing from here
 WORKDIR ${QT_BUILD_ROOT}
-
-# They switched the tarball naming scheme from 5.9 to 5.10. This ARG shall provide a possibility to reflect that
-ARG QT_TARBALL_NAMING_SCHEME=everywhere
 
 # Download sources
 RUN curl -sSL https://download.qt.io/official_releases/qt/${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}/${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}/single/qt-${QT_TARBALL_NAMING_SCHEME}-src-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.tar.xz | tar xJ
