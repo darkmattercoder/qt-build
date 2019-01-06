@@ -1,8 +1,8 @@
 # qt-build
 
 [![Build Status](https://travis-ci.com/darkmattercoder/qt-build.svg?branch=deploy)](https://travis-ci.com/darkmattercoder/qt-build)
-[![](https://images.microbadger.com/badges/image/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build)
+[![Image information](https://images.microbadger.com/badges/image/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build "Get your own image badge on microbadger.com")
+[![Image version information](https://images.microbadger.com/badges/version/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build)
 ![Dockerhub pulls](https://img.shields.io/docker/pulls/darkmattercoder/qt-build.svg)
 ![Dockerhub stars](https://img.shields.io/docker/stars/darkmattercoder/qt-build.svg)
 
@@ -54,33 +54,34 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 * `QT_VERSION_MAJOR`
 * `QT_VERSION_MINOR`
 * `QT_VERSION_PATCH`
-* `CI_BUILD` -- will suppress regular `make` output and show only warnings. When the compiling fails, `make` is run again to give you the whole output, skipping everything that has been built before, to give you the possibility to see the actual behaviour.
-* `CORE_COUNT` -- determines the number of parallel make jobs. Adjust it to fit your machine.
+* `QT_TARBALL_NAMING_SCHEME` -- gives you the possibility to alter the naming scheme. `Qt` changed that between `5.9`and `5.10` ftom `qt-everywhere-opensource-src` to `qt-everywhere-src`
+* `CI_BUILD` -- will suppress regular `make` output and show only warnings. When the compiling fails, `make` is run again to give you the whole output, skipping everything that has been built before, to give you the possibility to see the actual behaviour
+* `CORE_COUNT` -- determines the number of parallel make jobs. Adjust it to fit your machine
 
 ## Available tags
 
-| Tags                                                                                              | Size                                 |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| [![][ver_img_latest]][lnk_latest] [![][ver_img_5.12]][lnk_5.12] [![][ver_img_5.12.0]][lnk_5.12.0] | [![][size_img_5.12.0]][lnk_5.12.0]   |
-| [![][ver_img_5.11]][lnk_5.11] [![][ver_img_5.11.3]][lnk_5.11.3]                                   | [![][size_img_5.11.3]][lnk_5.11.3]   |
-| [![][ver_img_5.11.2]][lnk_5.11.2]                                                                 | [![][size_img_5.11.2]][lnk_5.11.2]   |
-| [![][ver_img_5.11.1]][lnk_5.11.1]                                                                 | [![][size_img_5.11.1]][lnk_5.11.1]   |
-| [![][ver_img_5.11.0]][lnk_5.11.0]                                                                 | [![][size_img_5.11.0]][lnk_5.11.0]   |
-| [![][ver_img_5.10]][lnk_5.10] [![][ver_img_5.10.1]][lnk_5.10.1]                                   | [![][size_img_5.10.1]][lnk_5.10.1]   |
-| [![][ver_img_5.10.0]][lnk_5.10.0]                                                                 | [![][size_img_5.10.0]][lnk_5.10.0]   |
-| [![][ver_img_5.9]][lnk_5.9] [![][ver_img_5.9.7]][lnk_5.9.7]                                       | [![][size_img_5.9.7]][lnk_5.9.7]     |
-| [![][ver_img_5.9.6]][lnk_5.9.6]                                                                   | [![][size_img_5.9.6]][lnk_5.9.6]     |
-| [![][ver_img_5.9.5]][lnk_5.9.5]                                                                   | [![][size_img_5.9.5]][lnk_5.9.5]     |
-| [![][ver_img_5.9.4]][lnk_5.9.4]                                                                   | [![][size_img_5.9.4]][lnk_5.9.4]     |
-| [![][ver_img_5.9.3]][lnk_5.9.3]                                                                   | [![][size_img_5.9.3]][lnk_5.9.3]     |
-| [![][ver_img_5.9.2]][lnk_5.9.2]                                                                   | [![][size_img_5.9.2]][lnk_5.9.2]     |
-| [![][ver_img_5.9.1]][lnk_5.9.1]                                                                   | [![][size_img_5.9.1]][lnk_5.9.1]     |
-| [![][ver_img_5.9.0]][lnk_5.9.0]                                                                   | [![][size_img_5.9.0]][lnk_5.9.0]     |
-| [![][ver_img_5.6]][lnk_5.6] [![][ver_img_5.6.3]][lnk_5.6.3]                                       | [![][size_img_5.6.3]][lnk_5.6.3]     |
-| [![][ver_img_5.6.2]][lnk_5.6.2]                                                                   | [![][size_img_5.6.2]][lnk_5.6.2]     |
-| [![][ver_img_5.6.1-1]][lnk_5.6.1-1]                                                               | [![][size_img_5.6.1-1]][lnk_5.6.1-1] |
-| [![][ver_img_5.6.1]][lnk_5.6.1]                                                                   | [![][size_img_5.6.1]][lnk_5.6.1]     |
-| [![][ver_img_5.6.0]][lnk_5.6.0]                                                                   | [![][size_img_5.6.0]][lnk_5.6.0]     |
+| Tags                                                                                                                            | Size                                            |
+| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0] | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0]   |
+| [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3]   |
+| [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                                                                     | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2]   |
+| [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                                                                     | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1]   |
+| [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                                                                     | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0]   |
+| [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]                                             | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1]   |
+| [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                                                                     | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0]   |
+| [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                 | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]     |
+| [![imgVerInfo][ver_img_5.9.6]][lnk_5.9.6]                                                                                       | [![imgSizeInfo][size_img_5.9.6]][lnk_5.9.6]     |
+| [![imgVerInfo][ver_img_5.9.5]][lnk_5.9.5]                                                                                       | [![imgSizeInfo][size_img_5.9.5]][lnk_5.9.5]     |
+| [![imgVerInfo][ver_img_5.9.4]][lnk_5.9.4]                                                                                       | [![imgSizeInfo][size_img_5.9.4]][lnk_5.9.4]     |
+| [![imgVerInfo][ver_img_5.9.3]][lnk_5.9.3]                                                                                       | [![imgSizeInfo][size_img_5.9.3]][lnk_5.9.3]     |
+| [![imgVerInfo][ver_img_5.9.2]][lnk_5.9.2]                                                                                       | [![imgSizeInfo][size_img_5.9.2]][lnk_5.9.2]     |
+| [![imgVerInfo][ver_img_5.9.1]][lnk_5.9.1]                                                                                       | [![imgSizeInfo][size_img_5.9.1]][lnk_5.9.1]     |
+| [![imgVerInfo][ver_img_5.9.0]][lnk_5.9.0]                                                                                       | [![imgSizeInfo][size_img_5.9.0]][lnk_5.9.0]     |
+| [![imgVerInfo][ver_img_5.6]][lnk_5.6] [![imgVerInfo][ver_img_5.6.3]][lnk_5.6.3]                                                 | [![imgSizeInfo][size_img_5.6.3]][lnk_5.6.3]     |
+| [![imgVerInfo][ver_img_5.6.2]][lnk_5.6.2]                                                                                       | [![imgSizeInfo][size_img_5.6.2]][lnk_5.6.2]     |
+| [![imgVerInfo][ver_img_5.6.1-1]][lnk_5.6.1-1]                                                                                   | [![imgSizeInfo][size_img_5.6.1-1]][lnk_5.6.1-1] |
+| [![imgVerInfo][ver_img_5.6.1]][lnk_5.6.1]                                                                                       | [![imgSizeInfo][size_img_5.6.1]][lnk_5.6.1]     |
+| [![imgVerInfo][ver_img_5.6.0]][lnk_5.6.0]                                                                                       | [![imgSizeInfo][size_img_5.6.0]][lnk_5.6.0]     |
 
 [ver_img_latest]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:latest.svg
 [size_img_latest]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:latest.svg
@@ -193,9 +194,9 @@ I highly appreciate any contributions to this project. I will add contribution g
 * File issues against the project
 * Tinker nice badges to give a visual overview of the docker image structure or the build status for individual tags
 * Open pull requests, for example
-    + add new qt version build configurations
-	+ add more qt features
-	+ add tests
+  + add new qt version build configurations
+  + add more qt features
+  + add tests
 
 For opening pull requests, please keep the following in mind:
 

@@ -58,8 +58,11 @@ LABEL stage=qt-build-builder
 # Installing from here
 WORKDIR ${QT_BUILD_ROOT}
 
+# They switched the tarball naming scheme from 5.9 to 5.10. This ARG shall provide a possibility to reflect that
+ARG QT_TARBALL_NAMING_SCHEME=everywhere
+
 # Download sources
-RUN curl -sSL https://download.qt.io/official_releases/qt/${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}/${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}/single/qt-everywhere-src-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.tar.xz | tar xJ
+RUN curl -sSL https://download.qt.io/official_releases/qt/${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}/${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}/single/qt-${QT_TARBALL_NAMING_SCHEME}-src-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.tar.xz | tar xJ
 
 WORKDIR ${QT_BUILD_DIR}
 
