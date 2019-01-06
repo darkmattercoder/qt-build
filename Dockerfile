@@ -10,18 +10,7 @@ ARG USER_GID=
 # Name of the regular user. Does not look useful but can save a bit time when changing
 ENV QT_USERNAME=qt
 
-# QT Version
-ARG QT_VERSION_MAJOR=5
-ARG QT_VERSION_MINOR=11
-ARG QT_VERSION_PATCH=3
-ENV QT_VERSION_MAJOR=${QT_VERSION_MAJOR}
-ENV QT_VERSION_MINOR=${QT_VERSION_MINOR}
-ENV QT_VERSION_PATCH=${QT_VERSION_PATCH}
-ENV QT_BUILD_ROOT=/tmp/qt_build
-# They switched the tarball naming scheme from 5.9 to 5.10. This ARG shall provide a possibility to reflect that
-ARG QT_TARBALL_NAMING_SCHEME=everywhere
-ENV QT_TARBALL_NAMING_SCHEME=${QT_TARBALL_NAMING_SCHEME}
-ENV QT_BUILD_DIR=${QT_BUILD_ROOT}/qt-${QT_TARBALL_NAMING_SCHEME}-src-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}/build
+# Needed in both builder and qt stages, so has to be defined here
 ENV QT_PREFIX=/usr/local
 
 # Install all build dependencies
@@ -35,6 +24,17 @@ RUN apt-get update && apt-get dist-upgrade && apt-get -y --no-install-recommends
 	build-essential \
 	pkg-config \
 	libgl1-mesa-dev \
+	# xcb dependencies
+	libfontconfig1-dev \
+	libfreetype6-dev \
+	libx11-dev \
+	libxext-dev \
+	libxfixes-dev \
+	libxi-dev \
+	libxrender-dev \
+	libxcb1-dev \
+	libx11-xcb-dev \
+	libxcb-glx0-dev \
 	# bash needed for argument substitution in entrypoint
 	bash \
 	&& apt-get -qq clean \
@@ -58,6 +58,18 @@ FROM base as builder
 
 LABEL stage=qt-build-builder
 
+# QT Version
+ARG QT_VERSION_MAJOR=5
+ARG QT_VERSION_MINOR=11
+ARG QT_VERSION_PATCH=3
+
+ENV QT_BUILD_ROOT=/tmp/qt_build
+
+# They switched the tarball naming scheme from 5.9 to 5.10. This ARG shall provide a possibility to reflect that
+ARG QT_TARBALL_NAMING_SCHEME=everywhere
+
+ENV QT_BUILD_DIR=${QT_BUILD_ROOT}/qt-${QT_TARBALL_NAMING_SCHEME}-src-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}/build
+
 # Installing from here
 WORKDIR ${QT_BUILD_ROOT}
 
@@ -68,6 +80,7 @@ WORKDIR ${QT_BUILD_DIR}
 
 # Configure, make, install
 ADD buildconfig/configure-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.sh configure.sh
+
 RUN chmod +x ./configure.sh && ./configure.sh
 
 # Possibility to make outputs less verbose when required for a ci build
