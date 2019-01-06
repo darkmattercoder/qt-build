@@ -67,7 +67,7 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 | [![][ver_img_5.11.1]][lnk_5.11.1]                                                                 | [![][size_img_5.11.1]][lnk_5.11.1] |
 | [![][ver_img_5.11.0]][lnk_5.11.0]                                                                 | [![][size_img_5.11.0]][lnk_5.11.0] |
 | [![][ver_img_5.10]][lnk_5.10] [![][ver_img_5.10.1]][lnk_5.10.1]                                   | [![][size_img_5.10.1]][lnk_5.10.1] |
-| [![][ver_img_5.10.1]][lnk_5.10.0]                                                                 | [![][size_img_5.10.1]][lnk_5.10.0] |
+| [![][ver_img_5.10.0]][lnk_5.10.0]                                                                 | [![][size_img_5.10.0]][lnk_5.10.0] |
 
 [ver_img_latest]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:latest.svg
 [size_img_latest]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:latest.svg
