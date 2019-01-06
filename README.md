@@ -60,28 +60,27 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 
 ## Available tags
 
-| Tags                                                                                                                            | Size                                            |
-| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0] | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0]   |
-| [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3]   |
-| [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                                                                     | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2]   |
-| [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                                                                     | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1]   |
-| [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                                                                     | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0]   |
-| [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]                                             | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1]   |
-| [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                                                                     | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0]   |
-| [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                 | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]     |
-| [![imgVerInfo][ver_img_5.9.6]][lnk_5.9.6]                                                                                       | [![imgSizeInfo][size_img_5.9.6]][lnk_5.9.6]     |
-| [![imgVerInfo][ver_img_5.9.5]][lnk_5.9.5]                                                                                       | [![imgSizeInfo][size_img_5.9.5]][lnk_5.9.5]     |
-| [![imgVerInfo][ver_img_5.9.4]][lnk_5.9.4]                                                                                       | [![imgSizeInfo][size_img_5.9.4]][lnk_5.9.4]     |
-| [![imgVerInfo][ver_img_5.9.3]][lnk_5.9.3]                                                                                       | [![imgSizeInfo][size_img_5.9.3]][lnk_5.9.3]     |
-| [![imgVerInfo][ver_img_5.9.2]][lnk_5.9.2]                                                                                       | [![imgSizeInfo][size_img_5.9.2]][lnk_5.9.2]     |
-| [![imgVerInfo][ver_img_5.9.1]][lnk_5.9.1]                                                                                       | [![imgSizeInfo][size_img_5.9.1]][lnk_5.9.1]     |
-| [![imgVerInfo][ver_img_5.9.0]][lnk_5.9.0]                                                                                       | [![imgSizeInfo][size_img_5.9.0]][lnk_5.9.0]     |
-| [![imgVerInfo][ver_img_5.6]][lnk_5.6] [![imgVerInfo][ver_img_5.6.3]][lnk_5.6.3]                                                 | [![imgSizeInfo][size_img_5.6.3]][lnk_5.6.3]     |
-| [![imgVerInfo][ver_img_5.6.2]][lnk_5.6.2]                                                                                       | [![imgSizeInfo][size_img_5.6.2]][lnk_5.6.2]     |
-| [![imgVerInfo][ver_img_5.6.1-1]][lnk_5.6.1-1]                                                                                   | [![imgSizeInfo][size_img_5.6.1-1]][lnk_5.6.1-1] |
-| [![imgVerInfo][ver_img_5.6.1]][lnk_5.6.1]                                                                                       | [![imgSizeInfo][size_img_5.6.1]][lnk_5.6.1]     |
-| [![imgVerInfo][ver_img_5.6.0]][lnk_5.6.0]                                                                                       | [![imgSizeInfo][size_img_5.6.0]][lnk_5.6.0]     |
+| Tags                                                                                                                            | Size                                          |
+| ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0] | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0] |
+| [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3] |
+| [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                                                                     | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2] |
+| [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                                                                     | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1] |
+| [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                                                                     | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0] |
+| [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]                                             | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1] |
+| [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                                                                     | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0] |
+| [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                 | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]   |
+| [![imgVerInfo][ver_img_5.9.6]][lnk_5.9.6]                                                                                       | [![imgSizeInfo][size_img_5.9.6]][lnk_5.9.6]   |
+| [![imgVerInfo][ver_img_5.9.5]][lnk_5.9.5]                                                                                       | [![imgSizeInfo][size_img_5.9.5]][lnk_5.9.5]   |
+| [![imgVerInfo][ver_img_5.9.4]][lnk_5.9.4]                                                                                       | [![imgSizeInfo][size_img_5.9.4]][lnk_5.9.4]   |
+| [![imgVerInfo][ver_img_5.9.3]][lnk_5.9.3]                                                                                       | [![imgSizeInfo][size_img_5.9.3]][lnk_5.9.3]   |
+| [![imgVerInfo][ver_img_5.9.2]][lnk_5.9.2]                                                                                       | [![imgSizeInfo][size_img_5.9.2]][lnk_5.9.2]   |
+| [![imgVerInfo][ver_img_5.9.1]][lnk_5.9.1]                                                                                       | [![imgSizeInfo][size_img_5.9.1]][lnk_5.9.1]   |
+| [![imgVerInfo][ver_img_5.9.0]][lnk_5.9.0]                                                                                       | [![imgSizeInfo][size_img_5.9.0]][lnk_5.9.0]   |
+| [![imgVerInfo][ver_img_5.6]][lnk_5.6] [![imgVerInfo][ver_img_5.6.3]][lnk_5.6.3]                                                 | [![imgSizeInfo][size_img_5.6.3]][lnk_5.6.3]   |
+| [![imgVerInfo][ver_img_5.6.2]][lnk_5.6.2]                                                                                       | [![imgSizeInfo][size_img_5.6.2]][lnk_5.6.2]   |
+| [![imgVerInfo][ver_img_5.6.1-1]][lnk_5.6.1-1] [![imgVerInfo][ver_img_5.6.1]][lnk_5.6.1]                                         | [![imgSizeInfo][size_img_5.6.1]][lnk_5.6.1]   |
+| [![imgVerInfo][ver_img_5.6.0]][lnk_5.6.0]                                                                                       | [![imgSizeInfo][size_img_5.6.0]][lnk_5.6.0]   |
 
 [ver_img_latest]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:latest.svg
 [size_img_latest]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:latest.svg

@@ -1,7 +1,7 @@
 # be sure to use the dashes even for one element, only then python parses it as a list
 5.6.0:
-5.6.1:
 5.6.1-1:
+  - "5.6.1"
 5.6.2:
 5.6.3:
   - "5.6"
