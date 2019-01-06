@@ -59,15 +59,28 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 
 ## Available tags
 
-| Tags                                                                                              | Size                               |
-| ------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [![][ver_img_latest]][lnk_latest] [![][ver_img_5.12]][lnk_5.12] [![][ver_img_5.12.0]][lnk_5.12.0] | [![][size_img_5.12.0]][lnk_5.12.0] |
-| [![][ver_img_5.11]][lnk_5.11] [![][ver_img_5.11.3]][lnk_5.11.3]                                   | [![][size_img_5.11.3]][lnk_5.11.3] |
-| [![][ver_img_5.11.2]][lnk_5.11.2]                                                                 | [![][size_img_5.11.2]][lnk_5.11.2] |
-| [![][ver_img_5.11.1]][lnk_5.11.1]                                                                 | [![][size_img_5.11.1]][lnk_5.11.1] |
-| [![][ver_img_5.11.0]][lnk_5.11.0]                                                                 | [![][size_img_5.11.0]][lnk_5.11.0] |
-| [![][ver_img_5.10]][lnk_5.10] [![][ver_img_5.10.1]][lnk_5.10.1]                                   | [![][size_img_5.10.1]][lnk_5.10.1] |
-| [![][ver_img_5.10.0]][lnk_5.10.0]                                                                 | [![][size_img_5.10.0]][lnk_5.10.0] |
+| Tags                                                                                              | Size                                 |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| [![][ver_img_latest]][lnk_latest] [![][ver_img_5.12]][lnk_5.12] [![][ver_img_5.12.0]][lnk_5.12.0] | [![][size_img_5.12.0]][lnk_5.12.0]   |
+| [![][ver_img_5.11]][lnk_5.11] [![][ver_img_5.11.3]][lnk_5.11.3]                                   | [![][size_img_5.11.3]][lnk_5.11.3]   |
+| [![][ver_img_5.11.2]][lnk_5.11.2]                                                                 | [![][size_img_5.11.2]][lnk_5.11.2]   |
+| [![][ver_img_5.11.1]][lnk_5.11.1]                                                                 | [![][size_img_5.11.1]][lnk_5.11.1]   |
+| [![][ver_img_5.11.0]][lnk_5.11.0]                                                                 | [![][size_img_5.11.0]][lnk_5.11.0]   |
+| [![][ver_img_5.10]][lnk_5.10] [![][ver_img_5.10.1]][lnk_5.10.1]                                   | [![][size_img_5.10.1]][lnk_5.10.1]   |
+| [![][ver_img_5.10.0]][lnk_5.10.0]                                                                 | [![][size_img_5.10.0]][lnk_5.10.0]   |
+| [![][ver_img_5.9]][lnk_5.9] [![][ver_img_5.9.7]][lnk_5.9.7]                                       | [![][size_img_5.9.7]][lnk_5.9.7]     |
+| [![][ver_img_5.9.6]][lnk_5.9.6]                                                                   | [![][size_img_5.9.6]][lnk_5.9.6]     |
+| [![][ver_img_5.9.5]][lnk_5.9.5]                                                                   | [![][size_img_5.9.5]][lnk_5.9.5]     |
+| [![][ver_img_5.9.4]][lnk_5.9.4]                                                                   | [![][size_img_5.9.4]][lnk_5.9.4]     |
+| [![][ver_img_5.9.3]][lnk_5.9.3]                                                                   | [![][size_img_5.9.3]][lnk_5.9.3]     |
+| [![][ver_img_5.9.2]][lnk_5.9.2]                                                                   | [![][size_img_5.9.2]][lnk_5.9.2]     |
+| [![][ver_img_5.9.1]][lnk_5.9.1]                                                                   | [![][size_img_5.9.1]][lnk_5.9.1]     |
+| [![][ver_img_5.9.0]][lnk_5.9.0]                                                                   | [![][size_img_5.9.0]][lnk_5.9.0]     |
+| [![][ver_img_5.6]][lnk_5.6] [![][ver_img_5.6.3]][lnk_5.6.3]                                       | [![][size_img_5.6.3]][lnk_5.6.3]     |
+| [![][ver_img_5.6.2]][lnk_5.6.2]                                                                   | [![][size_img_5.6.2]][lnk_5.6.2]     |
+| [![][ver_img_5.6.1-1]][lnk_5.6.1-1]                                                               | [![][size_img_5.6.1-1]][lnk_5.6.1-1] |
+| [![][ver_img_5.6.1]][lnk_5.6.1]                                                                   | [![][size_img_5.6.1]][lnk_5.6.1]     |
+| [![][ver_img_5.6.0]][lnk_5.6.0]                                                                   | [![][size_img_5.6.0]][lnk_5.6.0]     |
 
 [ver_img_latest]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:latest.svg
 [size_img_latest]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:latest.svg
@@ -113,6 +126,65 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 [size_img_5.10.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.10.0.svg
 [lnk_5.10.0]: "https://microbadger.com/images/darkmattercoder/qt-build:5.10.0"
 
+[ver_img_5.9]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.svg
+[size_img_5.9]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.svg
+[lnk_5.9]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9"
+
+[ver_img_5.9.7]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.7.svg
+[size_img_5.9.7]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.7.svg
+[lnk_5.9.7]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.7"
+
+[ver_img_5.9.6]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.6.svg
+[size_img_5.9.6]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.6.svg
+[lnk_5.9.6]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.6"
+
+[ver_img_5.9.5]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.5.svg
+[size_img_5.9.5]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.5.svg
+[lnk_5.9.5]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.5"
+
+[ver_img_5.9.4]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.4.svg
+[size_img_5.9.4]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.4.svg
+[lnk_5.9.4]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.4"
+
+[ver_img_5.9.3]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.3.svg
+[size_img_5.9.3]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.3.svg
+[lnk_5.9.3]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.3"
+
+[ver_img_5.9.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.2.svg
+[size_img_5.9.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.2.svg
+[lnk_5.9.2]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.2"
+
+[ver_img_5.9.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.1.svg
+[size_img_5.9.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.1.svg
+[lnk_5.9.1]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.1"
+
+[ver_img_5.9.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.0.svg
+[size_img_5.9.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.0.svg
+[lnk_5.9.0]: "https://microbadger.com/images/darkmattercoder/qt-build:5.9.0"
+
+[ver_img_5.6]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.svg
+[size_img_5.6]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.svg
+[lnk_5.6]: "https://microbadger.com/images/darkmattercoder/qt-build:5.6"
+
+[ver_img_5.6.3]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.3.svg
+[size_img_5.6.3]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.3.svg
+[lnk_5.6.3]: "https://microbadger.com/images/darkmattercoder/qt-build:5.6.3"
+
+[ver_img_5.6.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.2.svg
+[size_img_5.6.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.2.svg
+[lnk_5.6.2]: "https://microbadger.com/images/darkmattercoder/qt-build:5.6.2"
+
+[ver_img_5.6.1-1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.1-1.svg
+[size_img_5.6.1-1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.1-1.svg
+[lnk_5.6.1-1]: "https://microbadger.com/images/darkmattercoder/qt-build:5.6.1-1"
+
+[ver_img_5.6.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.1.svg
+[size_img_5.6.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.1.svg
+[lnk_5.6.1]: "https://microbadger.com/images/darkmattercoder/qt-build:5.6.1"
+
+[ver_img_5.6.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.0.svg
+[size_img_5.6.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.0.svg
+[lnk_5.6.0]: "https://microbadger.com/images/darkmattercoder/qt-build:5.6.0"
 ## Contributions
 
 I highly appreciate any contributions to this project. I will add contribution guidelines later on. As a short summary here is what you could do:
