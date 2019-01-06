@@ -7,8 +7,8 @@
 A (nearly) full qt build environment docker. Using multi-stage build to decouple build from actual image.
 Can build a `qmake` project with one single command.
 
-Find the images on [https://hub.docker.com/r/darkmattercoder/qt-build](dockerhub).
-Find the sources on [https://github.com/darkmattercoder/qt-build](github)
+Find the images on [Dockerhub](https://hub.docker.com/r/darkmattercoder/qt-build).
+Find the sources on [Github](https://github.com/darkmattercoder/qt-build)
 
 ## Usage (short)
 
