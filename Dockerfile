@@ -92,7 +92,7 @@ ARG CORE_COUNT=1
 
 RUN if [ $CI_BUILD = 2 ]; then \
 	echo "Suppressing all make output for CI environments to decrease log size..."; \
-	make -s -j${CORE_COUNT} || make; \
+	make -j${CORE_COUNT} &> /dev/null || make; \
 	elif [ $CI_BUILD ]; then \
 	echo "Suppressing regular make output for CI environments to decrease log size..."; \
 	make -j${CORE_COUNT} > /dev/null || make; \
