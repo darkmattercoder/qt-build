@@ -90,11 +90,14 @@ ENV CI_BUILD=${CI_BUILD}
 # Speeding up make depending of your system
 ARG CORE_COUNT=1
 
-RUN if [ $CI_BUILD ]; then \
-	echo "Suppressing make output for CI environments to decrease log size"; \
+RUN if [ $CI_BUILD = 2 ]; then \
+	echo "Suppressing all make output for CI environments to decrease log size..."; \
+	make -s -j${CORE_COUNT} || make; \
+	elif [ $CI_BUILD ]; then \
+	echo "Suppressing regular make output for CI environments to decrease log size..."; \
 	make -j${CORE_COUNT} > /dev/null || make; \
 	else make -j${CORE_COUNT}; \
-	fi
+	fi;
 
 # install it
 RUN make install

@@ -55,7 +55,7 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 * `QT_VERSION_MINOR`
 * `QT_VERSION_PATCH`
 * `QT_TARBALL_NAMING_SCHEME` -- gives you the possibility to alter the naming scheme. `Qt` changed that between `5.9`and `5.10` ftom `qt-everywhere-opensource-src` to `qt-everywhere-src`
-* `CI_BUILD` -- will suppress regular `make` output and show only warnings. When the compiling fails, `make` is run again to give you the whole output, skipping everything that has been built before, to give you the possibility to see the actual behaviour
+* `CI_BUILD` -- will suppress regular `make` output. If set to `2` it will stay silent, if set to `1` (or anything else) only warnings will show up. When the compiling fails, `make` is run again  regularly to give you the whole output, skipping everything that has been built before, to give you the possibility to see the actual behaviour
 * `CORE_COUNT` -- determines the number of parallel make jobs. Adjust it to fit your machine
 
 ## Available tags
