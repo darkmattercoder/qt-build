@@ -64,7 +64,8 @@ All currently supported versions of `Qt` should be available as tags. It was nic
 
 | Tags                                                                                                                            | Size                                          |
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0] | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0] |
+| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.1]][lnk_5.12.1] | [![imgSizeInfo][size_img_5.12.1]][lnk_5.12.1] |
+| [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0]                                                                                     | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0] |
 | [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3] |
 | [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                                                                     | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2] |
 | [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                                                                     | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1] |
@@ -91,6 +92,10 @@ All currently supported versions of `Qt` should be available as tags. It was nic
 [ver_img_5.12]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.svg
 [size_img_5.12]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.svg
 [lnk_5.12]: https://microbadger.com/images/darkmattercoder/qt-build:5.12
+
+[ver_img_5.12.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.1.svg
+[size_img_5.12.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.1.svg
+[lnk_5.12.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.1
 
 [ver_img_5.12.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.0.svg
 [size_img_5.12.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.0.svg
