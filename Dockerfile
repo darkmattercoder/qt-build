@@ -14,7 +14,7 @@ ENV QT_USERNAME=qt
 ENV QT_PREFIX=/usr/local
 
 # Install all build dependencies
-RUN apt-get update && apt-get dist-upgrade && apt-get -y --no-install-recommends install \
+RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recommends install \
 	ca-certificates \
 	curl \
 	python \
