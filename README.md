@@ -60,11 +60,12 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 
 ## Available tags
 
-All currently supported versions of `Qt` should be available as tags. It was nice to make the archived versions, too, but I did not yet starte to adjust the download method as archived versions are taken from a different location. This is no hard work though, so might be a nice ![first contribution](https://img.shields.io/badge/-first_contribution-006b75.svg)
+All currently supported versions of `Qt` should be available as tags. It was nice to make the archived versions, too, but I did not yet start to adjust the download method as archived versions are taken from a different location. This is no hard work though, so might be a nice ![first contribution](https://img.shields.io/badge/-first_contribution-006b75.svg)
 
 | Tags                                                                                                                            | Size                                          |
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.2]][lnk_5.12.2] | [![imgSizeInfo][size_img_5.12.2]][lnk_5.12.2] |
+| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.3]][lnk_5.12.3] | [![imgSizeInfo][size_img_5.12.3]][lnk_5.12.3] |
+| [![imgVerInfo][ver_img_5.12.2]][lnk_5.12.2]                                                                                     | [![imgSizeInfo][size_img_5.12.2]][lnk_5.12.2] |
 | [![imgVerInfo][ver_img_5.12.1]][lnk_5.12.1]                                                                                     | [![imgSizeInfo][size_img_5.12.1]][lnk_5.12.1] |
 | [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0]                                                                                     | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0] |
 | [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3] |
@@ -93,6 +94,10 @@ All currently supported versions of `Qt` should be available as tags. It was nic
 [ver_img_5.12]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.svg
 [size_img_5.12]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.svg
 [lnk_5.12]: https://microbadger.com/images/darkmattercoder/qt-build:5.12
+
+[ver_img_5.12.3]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.3.svg
+[size_img_5.12.3]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.3.svg
+[lnk_5.12.3]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.3
 
 [ver_img_5.12.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.2.svg
 [size_img_5.12.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.2.svg
