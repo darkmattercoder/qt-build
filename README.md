@@ -74,7 +74,8 @@ All currently supported versions of `Qt` should be available as tags. It was nic
 | [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                                                                     | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0] |
 | [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]                                             | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1] |
 | [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                                                                     | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0] |
-| [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                 | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]   |
+| [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.8]][lnk_5.9.8]                                                 | [![imgSizeInfo][size_img_5.9.8]][lnk_5.9.8]   |
+| [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                                                       | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]   |
 | [![imgVerInfo][ver_img_5.9.6]][lnk_5.9.6]                                                                                       | [![imgSizeInfo][size_img_5.9.6]][lnk_5.9.6]   |
 | [![imgVerInfo][ver_img_5.9.5]][lnk_5.9.5]                                                                                       | [![imgSizeInfo][size_img_5.9.5]][lnk_5.9.5]   |
 | [![imgVerInfo][ver_img_5.9.4]][lnk_5.9.4]                                                                                       | [![imgSizeInfo][size_img_5.9.4]][lnk_5.9.4]   |
@@ -146,6 +147,10 @@ All currently supported versions of `Qt` should be available as tags. It was nic
 [ver_img_5.9]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.svg
 [size_img_5.9]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.svg
 [lnk_5.9]: https://microbadger.com/images/darkmattercoder/qt-build:5.9
+
+[ver_img_5.9.8]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.8.svg
+[size_img_5.9.8]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.8.svg
+[lnk_5.9.8]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.8
 
 [ver_img_5.9.7]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.7.svg
 [size_img_5.9.7]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.7.svg
