@@ -12,7 +12,7 @@ def push_image(image):
     ''' push a present docker image from a tag list to docker hub '''
     tags = {}
     with open(os.path.dirname(os.path.realpath(__file__)) + "/tags.yml", "r") as tagfile:
-        tags = yaml.load(tagfile)
+        tags = yaml.safe_load(tagfile)
     print(tags)
     currentTag = image.split(":", 1)[1]
     for mainTag, subTags in tags.items():
