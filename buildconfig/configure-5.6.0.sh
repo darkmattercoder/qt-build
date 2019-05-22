@@ -3,7 +3,7 @@ set -e
 # adding compatible ssl version
 git clone https://github.com/openssl/openssl.git
 cd openssl
-LATEST_TAG=git describe --match "OpenSSL_1_0_2[a-z]*" --abbrev=0
+LATEST_TAG=$(git describe --match "OpenSSL_1_0_2[a-z]*" --abbrev=0)
 git checkout $LATEST_TAG
 ./config --prefix=/opt/openssl_build_stable -shared
 make
