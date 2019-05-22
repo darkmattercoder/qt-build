@@ -24,7 +24,7 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recomme
 	build-essential \
 	pkg-config \
 	libgl1-mesa-dev \
-	libssl-dev \
+	libssl1.0-dev \
 	# git is needed to build openssl in older versions
 	git \
 	# xcb dependencies
