@@ -12,5 +12,5 @@ git checkout $LATEST_TAG
 make -j$CORE_COUNT > /dev/null 2>&1 || make -j$CORE_COUNT
 make -j$CORE_COUNT test > /dev/null 2>&1 || make -j$CORE_COUNT test
 make install > /dev/null 2>&1 || make install
-
+cd ..
 OPENSSL_LIBS='-L/opt/openssl_build_stable/lib -lssl -lcrypto' ../configure -prefix $QT_PREFIX -opensource -confirm-license -nomake examples -nomake tests -qt-xcb -openssl-linked -I /opt/openssl_build_stable/include/openssl -L /opt/openssl_build_stable/lib
