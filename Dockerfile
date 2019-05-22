@@ -81,17 +81,18 @@ RUN curl -sSL https://download.qt.io/official_releases/qt/${QT_VERSION_MAJOR}.${
 
 WORKDIR ${QT_BUILD_DIR}
 
-# Configure, make, install
-ADD buildconfig/configure-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.sh configure.sh
-
-RUN chmod +x ./configure.sh && ./configure.sh
-
 # Possibility to make outputs less verbose when required for a ci build
 ARG CI_BUILD=
 ENV CI_BUILD=${CI_BUILD}
 
 # Speeding up make depending of your system
 ARG CORE_COUNT=1
+ENV CORE_COUNT=${CORE_COUNT}
+
+# Configure, make, install
+ADD buildconfig/configure-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.sh configure.sh
+
+RUN chmod +x ./configure.sh && ./configure.sh ${CORE_COUNT} ${CI_BUILD}
 
 RUN if [ $CI_BUILD = 2 ]; then \
 	echo "Suppressing all make output for CI environments to decrease log size..."; \
