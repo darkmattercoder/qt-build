@@ -96,10 +96,10 @@ RUN chmod +x ./configure.sh && ./configure.sh ${CORE_COUNT} ${CI_BUILD}
 
 RUN if [ $CI_BUILD = 2 ]; then \
 	echo "Suppressing all make output for CI environments to decrease log size..."; \
-	make -j${CORE_COUNT} > /dev/null 2>&1 || make; \
+	make -j${CORE_COUNT} > /dev/null 2>&1 || make | tail -n500; \
 	elif [ $CI_BUILD ]; then \
 	echo "Suppressing regular make output for CI environments to decrease log size..."; \
-	make -j${CORE_COUNT} > /dev/null || make; \
+	make -j${CORE_COUNT} > /dev/null || make | tail -n500; \
 	else make -j${CORE_COUNT}; \
 	fi;
 
