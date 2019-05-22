@@ -25,6 +25,8 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recomme
 	pkg-config \
 	libgl1-mesa-dev \
 	libssl-dev \
+	# git is needed to build openssl in older versions
+	git \
 	# xcb dependencies
 	libfontconfig1-dev \
 	libfreetype6-dev \
