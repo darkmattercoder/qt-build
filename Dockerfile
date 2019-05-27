@@ -7,6 +7,11 @@ LABEL stage=qt-build-base
 ARG USER_UID=
 ARG USER_GID=
 
+# In case you have to build behind a proxy
+ARG PROXY=
+ENV http_proxy=$PROXY
+ENV https_proxy=$PROXY
+
 # Name of the regular user. Does not look useful but can save a bit time when changing
 ENV QT_USERNAME=qt
 
@@ -24,7 +29,10 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recomme
 	build-essential \
 	pkg-config \
 	libgl1-mesa-dev \
-	libssl1.0-dev \
+	libicu-dev \
+	# bc suggested for openssl tests
+	bc \
+	libssl-dev \
 	# git is needed to build openssl in older versions
 	git \
 	# xcb dependencies
@@ -91,18 +99,11 @@ ENV CORE_COUNT=${CORE_COUNT}
 
 # Configure, make, install
 ADD buildconfig/configure-${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}.sh configure.sh
+# before running the configuration, adding a directory to copy additional contents to the final image
+RUN mkdir /opt/extra-dependencies && chmod +x ./configure.sh && ./configure.sh ${CORE_COUNT} ${CI_BUILD}
 
-RUN chmod +x ./configure.sh && ./configure.sh ${CORE_COUNT} ${CI_BUILD}
-
-RUN if [ $CI_BUILD = 2 ]; then \
-	echo "Suppressing all make output for CI environments to decrease log size..."; \
-	make -j${CORE_COUNT} > /dev/null 2>&1 || echo "Running make again to see errors..." && make > /tmp/makelog 2>&1 || echo "displaying last N lines..." && tail -n 500 /tmp/makelog && exit 2; \
-	elif [ $CI_BUILD ]; then \
-	echo "Suppressing regular make output for CI environments to decrease log size..."; \
-	make -j${CORE_COUNT} > /dev/null || echo "Running make again to see errors..." && make > /tmp/makelog || echo "displaying last N lines..." && tail -n 500 /tmp/makelog && exit 2; \
-	else \
-	make -j${CORE_COUNT}; \
-	fi;
+COPY buildconfig/build.sh build.sh
+RUN ./build.sh ${CI_BUILD} ${CORE_COUNT}
 
 # install it
 RUN make install
@@ -117,6 +118,7 @@ ENV ENTRYPOINT_DIR=/usr/local/bin
 ENV APP_BUILDDIR=/var/build
 
 COPY --from=builder ${QT_PREFIX} ${QT_PREFIX}
+COPY --from=builder /opt/extra-dependencies/ /
 COPY entrypoint.sh ${ENTRYPOINT_DIR}
 
 RUN chmod +x ${ENTRYPOINT_DIR}/entrypoint.sh
