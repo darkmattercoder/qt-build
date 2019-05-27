@@ -58,6 +58,10 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 * `CI_BUILD` -- will suppress regular `make` output. If set to `2` it will stay silent, if set to `1` (or anything else) only warnings will show up. When the compiling fails, `make` is run again  regularly to give you the whole output, skipping everything that has been built before, to give you the possibility to see the actual behaviour. When left undefined, all output is visible and the second run of make is *not* performed
 * `CORE_COUNT` -- determines the number of parallel make jobs. Adjust it to fit your machine
 
+### Convenience local build script
+
+In case you want to do a quick, customised build like I do it in the automated build process. Have a look at the self-explanatory script `build-dockerfile-local.sh`.
+
 ## Available tags
 
 All currently supported versions of `Qt` should be available as tags. It was nice to make the archived versions, too, but I did not yet start to adjust the download method as archived versions are taken from a different location. This is no hard work though, so might be a nice ![first contribution](https://img.shields.io/badge/-first_contribution-006b75.svg)
