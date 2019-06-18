@@ -1,6 +1,7 @@
-#include <iostream>
+#include <QDebug>
 
 int main()
 {
-  std::cout << "\nHello World!\n";
+  QString hello("Hello World!");
+  qDebug() << hello;
 }
