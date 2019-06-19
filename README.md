@@ -54,6 +54,7 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 * `QT_VERSION_MAJOR`
 * `QT_VERSION_MINOR`
 * `QT_VERSION_PATCH`
+* `QT_DOWNLOAD_BRANCH` -- gives you the possibility to address different versions for download. Should e.g. read `official_releases` or `archive`.
 * `QT_TARBALL_NAMING_SCHEME` -- gives you the possibility to alter the naming scheme. `Qt` changed that between `5.9`and `5.10` ftom `qt-everywhere-opensource-src` to `qt-everywhere-src`. The `qt-` and `-src` parts are hardcoded, `QT_TARBALL_NAMING_SCHEME` is inserted between
 * `CI_BUILD` -- will suppress regular `make` output. If set to `2` it will stay silent, if set to `1` (or anything else) only warnings will show up. When the compiling fails, `make` is run again  regularly to give you the whole output, skipping everything that has been built before, to give you the possibility to see the actual behaviour. When left undefined, all output is visible and the second run of make is *not* performed
 * `CORE_COUNT` -- determines the number of parallel make jobs. Adjust it to fit your machine
@@ -64,7 +65,7 @@ In case you want to do a quick, customised build like I do it in the automated b
 
 ## Available tags
 
-All currently supported versions of `Qt` should be available as tags. It was nice to make the archived versions, too, but I did not yet start to adjust the download method as archived versions are taken from a different location. This is no hard work though, so might be a nice ![first contribution](https://img.shields.io/badge/-first_contribution-006b75.svg)
+All currently supported versions of `Qt` should be available as tags. I added also versions that have been supported at the time adding them first, but are now archived. I'd like to add other archived versions, too, but I did not yet put any effort into thet. This is no hard work though, so might be a nice ![first contribution](https://img.shields.io/badge/-first_contribution-006b75.svg)
 
 | Tags                                                                                                                            | Size                                          |
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
