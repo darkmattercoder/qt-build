@@ -70,7 +70,8 @@ All currently supported versions of `Qt` should be available as tags. I added al
 | Tags                                                                                                                            | Size                                          |
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.13]][lnk_5.13] [![imgVerInfo][ver_img_5.13.0]][lnk_5.13.0] | [![imgSizeInfo][size_img_5.13.0]][lnk_5.13.0] |
-| [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.3]][lnk_5.12.3]                                             | [![imgSizeInfo][size_img_5.12.3]][lnk_5.12.3] |
+| [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.4]][lnk_5.12.4]                                             | [![imgSizeInfo][size_img_5.12.4]][lnk_5.12.4] |
+| [![imgVerInfo][ver_img_5.12.3]][lnk_5.12.3]                                                                                     | [![imgSizeInfo][size_img_5.12.3]][lnk_5.12.3] |
 | [![imgVerInfo][ver_img_5.12.2]][lnk_5.12.2]                                                                                     | [![imgSizeInfo][size_img_5.12.2]][lnk_5.12.2] |
 | [![imgVerInfo][ver_img_5.12.1]][lnk_5.12.1]                                                                                     | [![imgSizeInfo][size_img_5.12.1]][lnk_5.12.1] |
 | [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0]                                                                                     | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0] |
