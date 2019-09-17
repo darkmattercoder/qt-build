@@ -62,7 +62,7 @@ RUN if [ ${USER_GID} ]; then \
 	useradd -u ${USER_UID} -g ${QT_USERNAME} ${QT_USERNAME}; \
 	else \
 	useradd -g ${QT_USERNAME} ${QT_USERNAME}; \
-	fi
+	fi && mkdir /home/${QT_USERNAME}
 
 # build stage
 FROM base as builder
