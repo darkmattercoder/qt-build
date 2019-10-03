@@ -13,6 +13,7 @@ make -j$CORE_COUNT > /dev/null 2>&1 || make -j$CORE_COUNT
 make test > /dev/null 2>&1 || make test
 make install > /dev/null 2>&1 || make install
 cd ..
+sed -i -e 's/"-lgds"/"-lfbclient"/' ../qtbase/src/plugins/sqldrivers/configure.json
 OPENSSL_LIBS='-L/opt/openssl_build_stable/lib -lssl -lcrypto' ../configure -prefix $QT_PREFIX -opensource -confirm-license -nomake examples -nomake tests -qt-xcb -openssl-linked -I /opt/openssl_build_stable/include -L /opt/openssl_build_stable/lib
 mkdir /opt/extra-dependencies/opt
 cp -r /opt/openssl_build_stable /opt/extra-dependencies/opt
