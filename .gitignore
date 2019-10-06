@@ -1,3 +1,21 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 tests/*/build
 tests/build
 tests/tests.pro
+Makefile
+.qmake.stash
+*.qmake.stash
+*qmake.stash
+/.qmake.stash
+*.o
+run-tests.sh
+tests.pro
+/.qmake.stash

@@ -16,5 +16,6 @@ make test > /dev/null 2>&1 || make test
 make install > /dev/null 2>&1 || make install
 cd ..
 OPENSSL_LIBS='-L/opt/openssl_build_stable/lib -lssl -lcrypto' ../../qt-everywhere-opensource-src-5.6.1/configure -prefix $QT_PREFIX -opensource -confirm-license -nomake examples -nomake tests -qt-xcb -openssl-linked -I /opt/openssl_build_stable/include -L /opt/openssl_build_stable/lib
-mkdir /opt/extra-dependencies/opt
-cp -r /opt/openssl_build_stable /opt/extra-dependencies/opt
+mkdir -p /opt/extra-dependencies/lib
+cp -r /opt/openssl_build_stable /opt/extra-dependencies
+ln -s /opt/extra-dependencies/openssl_build_stable/lib/* /opt/extra-dependencies/lib
