@@ -123,7 +123,15 @@ ENV ENTRYPOINT_DIR=/usr/local/bin
 ENV APP_BUILDDIR=/var/build
 
 COPY --from=builder ${QT_PREFIX} ${QT_PREFIX}
-COPY --from=builder /opt/extra-dependencies/ /
+
+# the next copy statement failed often. My only guess is, that the extra dependencies are not existent and somehow that
+# triggers a failure here.... A workaround for similar issues is to put an empty run statement in between: https://github.com/moby/moby/issues/37965
+RUN true
+COPY --from=builder /opt/extra-dependencies /opt/extra-dependencies
+
+#for modifications during configuration
+ENV LD_LIBRARY_PATH=/opt/extra-dependencies/lib:${LD_LIBRARY_PATH}
+
 # the next copy statement failed often. My only guess is, that the extra dependencies are not existent and somehow that
 # triggers a failure here.... A workaround for similar issues is to put an empty run statement in between: https://github.com/moby/moby/issues/37965
 RUN true
