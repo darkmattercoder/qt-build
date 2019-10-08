@@ -30,6 +30,9 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recomme
 	pkg-config \
 	libgl1-mesa-dev \
 	libicu-dev \
+	firebird-dev \
+	libmysqlclient-dev \
+	libpq-dev \
 	# bc suggested for openssl tests
 	bc \
 	libssl-dev \
