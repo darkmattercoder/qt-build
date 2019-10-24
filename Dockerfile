@@ -113,6 +113,16 @@ RUN ./build.sh ${CI_BUILD} ${CORE_COUNT}
 # install it
 RUN make install
 
+# install cmake
+ENV CMAKE_PREFIX=/usr/bin/cmake
+
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.14.3/cmake-3.14.3-Linux-x86_64.sh \
+      -q -O /tmp/cmake-install.sh \
+      && chmod u+x /tmp/cmake-install.sh \
+      && mkdir ${CMAKE_PREFIX} \
+      && /tmp/cmake-install.sh --skip-license --prefix=${CMAKE_PREFIX} \
+      && rm /tmp/cmake-install.sh
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # resulting image with environment
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,6 +133,9 @@ ENV ENTRYPOINT_DIR=/usr/local/bin
 ENV APP_BUILDDIR=/var/build
 
 COPY --from=builder ${QT_PREFIX} ${QT_PREFIX}
+COPY --from=builder ${CMAKE_PREFIX} ${CMAKE_PREFIX}
+
+ENV PATH="${CMAKE_PREFIX}/bin:${PATH}"
 
 # the next copy statement failed often. My only guess is, that the extra dependencies are not existent and somehow that
 # triggers a failure here.... A workaround for similar issues is to put an empty run statement in between: https://github.com/moby/moby/issues/37965
