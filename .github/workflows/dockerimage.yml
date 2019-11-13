@@ -44,4 +44,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - run: echo ${{ matrix.env }}
+      - run: |
+          echo env
+        env: ${{ matrix.env }}
