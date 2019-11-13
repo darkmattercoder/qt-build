@@ -48,5 +48,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: |
-          echo $VERSION $ARGS #docker build --pull --cache-from darkmattercoder/qt-build:builder-$VERSION $ARGS --target=builder -t darkmattercoder/qt-build:builder-$VERSION .
+          docker build --pull --cache-from darkmattercoder/qt-build:builder-$VERSION $ARGS --target=builder -t darkmattercoder/qt-build:builder-$VERSION .
         env: ${{ matrix.env }}
