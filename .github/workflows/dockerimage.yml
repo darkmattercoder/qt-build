@@ -12,7 +12,7 @@ jobs:
           - VERSION: 5.13.1
             ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=13 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.13.0
-            ARGS: --build-arg QT_VERSION_MAJOR=5--build-arg QT_VERSION_MINOR=13--build-arg QT_VERSION_PATCH=0--build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=13 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           # [
           #   -5.13.1 --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=13 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2,
           #   -5.13.0 --build-arg QT_VERSION_MAJOR=5--build-arg QT_VERSION_MINOR=13--build-arg QT_VERSION_PATCH=0--build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2,
