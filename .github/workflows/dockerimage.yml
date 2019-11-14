@@ -16,53 +16,53 @@ jobs:
           - VERSION: 5.12.5
             ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=5 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.12.4
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=4 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=4 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.12.3
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.12.2
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.12.1
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.12.0
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=12 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.11.3
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.11.2
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.11.1
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.11.0
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=11 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.10.1
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=10 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=10 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.10.0
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=10 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=10 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.8
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=8 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=8 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.7
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=7 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=7 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.6
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=6 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=6 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.5
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=5 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=5 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.4
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=4 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=4 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.3
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.2
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.1
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=1 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.9.0
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=official_releases--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=9 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=official_releases --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.6.3
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=3 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.6.2
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=2 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.6.1-1
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=1-1 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=1-1 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=2
           - VERSION: 5.6.0
-            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=archive--build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=1
+            ARGS: --build-arg QT_VERSION_MAJOR=5 --build-arg QT_VERSION_MINOR=6 --build-arg QT_VERSION_PATCH=0 --build-arg QT_DOWNLOAD_BRANCH=archive --build-arg QT_TARBALL_NAMING_SCHEME=everywhere-opensource --build-arg CI_BUILD=2 --build-arg CORE_COUNT=1
 
     steps:
       - uses: actions/checkout@v1
