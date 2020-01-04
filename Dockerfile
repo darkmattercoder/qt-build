@@ -51,6 +51,9 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recomme
 	libxcb-glx0-dev \
 	# bash needed for argument substitution in entrypoint
 	bash \
+	# since 5.14.0 we apparently need libdbus-1-dev and libnss3-dev
+	libnss3-dev \
+	libdbus-1-dev \
 	&& apt-get -qq clean \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& printf "#!/bin/sh\nls -lah" > /usr/local/bin/ll && chmod +x /usr/local/bin/ll
