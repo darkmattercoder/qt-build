@@ -12,6 +12,12 @@ Can build a `qmake` project with one single command.
 Find the images on [Dockerhub](https://hub.docker.com/r/darkmattercoder/qt-build).
 Find the sources on [Github](https://github.com/darkmattercoder/qt-build)
 
+Automated builds will run weekly, thus changes in the underlying base images will reach the registry within that time.
+
+## What is missing
+
+Due to a build time limitation of 3 hours with travis ci, I unfortunately am not able to provide `qtwebengine` with my builds. Once I either get help with transferring the build pipeline to another platform, where the time limitation is not that strict, or once travis give their VMs more cores for build jobs so that the build fits in 3 hours, I can include `qtwebengine` in my builds. Until then, you have to build the image locally with the provided script (description below) and adjust the build config if you absolutely need it.
+
 ## Usage (short)
 
 Download `qt-build` from dockerhub:
