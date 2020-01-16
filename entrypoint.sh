@@ -12,7 +12,6 @@ if [ "$1" = "build" ]; then
 		cd $APP_BUILDDIR
 		mkdir -p build
 		cd build
-		rm -rf *
 		qmake $ADDITIONAL_ARGS ..
 		make
 	fi
