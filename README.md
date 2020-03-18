@@ -73,208 +73,250 @@ In case you want to do a quick, customised build like I do it in the automated b
 
 All currently supported versions of `Qt` should be available as tags. I added also versions that have been supported at the time adding them first, but are now archived. I'd like to add other archived versions, too, but I did not yet put any effort into thet. This is no hard work though, so might be a nice ![first contribution](https://img.shields.io/badge/-first_contribution-006b75.svg)
 
-| Tags                                                                                                                            | Size                                          |
-| ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.14]][lnk_5.14] [![imgVerInfo][ver_img_5.14.1]][lnk_5.14.1] | [![imgSizeInfo][size_img_5.14.1]][lnk_5.14.1] |
-| [![imgVerInfo][ver_img_5.14.0]][lnk_5.14.0]                                                                                     | [![imgSizeInfo][size_img_5.14.0]][lnk_5.14.0] |
-| [![imgVerInfo][ver_img_5.13]][lnk_5.13] [![imgVerInfo][ver_img_5.13.2]][lnk_5.13.2]                                             | [![imgSizeInfo][size_img_5.13.2]][lnk_5.13.2] |
-| [![imgVerInfo][ver_img_5.13.1]][lnk_5.13.1]                                                                                     | [![imgSizeInfo][size_img_5.13.1]][lnk_5.13.1] |
-| [![imgVerInfo][ver_img_5.13.0]][lnk_5.13.0]                                                                                     | [![imgSizeInfo][size_img_5.13.0]][lnk_5.13.0] |
-| [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.7]][lnk_5.12.7]                                             | [![imgSizeInfo][size_img_5.12.7]][lnk_5.12.7] |
-| [![imgVerInfo][ver_img_5.12.6]][lnk_5.12.6]                                                                                     | [![imgSizeInfo][size_img_5.12.6]][lnk_5.12.6] |
-| [![imgVerInfo][ver_img_5.12.5]][lnk_5.12.5]                                                                                     | [![imgSizeInfo][size_img_5.12.5]][lnk_5.12.5] |
-| [![imgVerInfo][ver_img_5.12.4]][lnk_5.12.4]                                                                                     | [![imgSizeInfo][size_img_5.12.4]][lnk_5.12.4] |
-| [![imgVerInfo][ver_img_5.12.3]][lnk_5.12.3]                                                                                     | [![imgSizeInfo][size_img_5.12.3]][lnk_5.12.3] |
-| [![imgVerInfo][ver_img_5.12.2]][lnk_5.12.2]                                                                                     | [![imgSizeInfo][size_img_5.12.2]][lnk_5.12.2] |
-| [![imgVerInfo][ver_img_5.12.1]][lnk_5.12.1]                                                                                     | [![imgSizeInfo][size_img_5.12.1]][lnk_5.12.1] |
-| [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0]                                                                                     | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0] |
-| [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3] |
-| [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                                                                     | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2] |
-| [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                                                                     | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1] |
-| [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                                                                     | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0] |
-| [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]                                             | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1] |
-| [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                                                                     | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0] |
-| [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.9]][lnk_5.9.9]                                                 | [![imgSizeInfo][size_img_5.9.9]][lnk_5.9.9]   |
-| [![imgVerInfo][ver_img_5.9.8]][lnk_5.9.8]                                                                                       | [![imgSizeInfo][size_img_5.9.8]][lnk_5.9.8]   |
-| [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                                                       | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]   |
-| [![imgVerInfo][ver_img_5.9.6]][lnk_5.9.6]                                                                                       | [![imgSizeInfo][size_img_5.9.6]][lnk_5.9.6]   |
-| [![imgVerInfo][ver_img_5.9.5]][lnk_5.9.5]                                                                                       | [![imgSizeInfo][size_img_5.9.5]][lnk_5.9.5]   |
-| [![imgVerInfo][ver_img_5.9.4]][lnk_5.9.4]                                                                                       | [![imgSizeInfo][size_img_5.9.4]][lnk_5.9.4]   |
-| [![imgVerInfo][ver_img_5.9.3]][lnk_5.9.3]                                                                                       | [![imgSizeInfo][size_img_5.9.3]][lnk_5.9.3]   |
-| [![imgVerInfo][ver_img_5.9.2]][lnk_5.9.2]                                                                                       | [![imgSizeInfo][size_img_5.9.2]][lnk_5.9.2]   |
-| [![imgVerInfo][ver_img_5.9.1]][lnk_5.9.1]                                                                                       | [![imgSizeInfo][size_img_5.9.1]][lnk_5.9.1]   |
-| [![imgVerInfo][ver_img_5.9.0]][lnk_5.9.0]                                                                                       | [![imgSizeInfo][size_img_5.9.0]][lnk_5.9.0]   |
-| [![imgVerInfo][ver_img_5.6]][lnk_5.6] [![imgVerInfo][ver_img_5.6.3]][lnk_5.6.3]                                                 | [![imgSizeInfo][size_img_5.6.3]][lnk_5.6.3]   |
-| [![imgVerInfo][ver_img_5.6.2]][lnk_5.6.2]                                                                                       | [![imgSizeInfo][size_img_5.6.2]][lnk_5.6.2]   |
-| [![imgVerInfo][ver_img_5.6.1-1]][lnk_5.6.1-1] [![imgVerInfo][ver_img_5.6.1]][lnk_5.6.1]                                         | [![imgSizeInfo][size_img_5.6.1]][lnk_5.6.1]   |
-| [![imgVerInfo][ver_img_5.6.0]][lnk_5.6.0]                                                                                       | [![imgSizeInfo][size_img_5.6.0]][lnk_5.6.0]   |
+| Tags                                                                                                                            | Size                                          | Layers                                           |
+| ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |
+| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.14]][lnk_5.14] [![imgVerInfo][ver_img_5.14.1]][lnk_5.14.1] | [![imgSizeInfo][size_img_5.14.1]][lnk_5.14.1] | [![imgLayerInfo][layers_img_5.14.1]][lnk_5.14.1] |
+| [![imgVerInfo][ver_img_5.14.0]][lnk_5.14.0]                                                                                     | [![imgSizeInfo][size_img_5.14.0]][lnk_5.14.0] | [![imgLayerInfo][layers_img_5.14.0]][lnk_5.14.0] |
+| [![imgVerInfo][ver_img_5.13]][lnk_5.13] [![imgVerInfo][ver_img_5.13.2]][lnk_5.13.2]                                             | [![imgSizeInfo][size_img_5.13.2]][lnk_5.13.2] | [![imgLayerInfo][layers_img_5.13.2]][lnk_5.13.2] |
+| [![imgVerInfo][ver_img_5.13.1]][lnk_5.13.1]                                                                                     | [![imgSizeInfo][size_img_5.13.1]][lnk_5.13.1] | [![imgLayerInfo][layers_img_5.13.1]][lnk_5.13.1] |
+| [![imgVerInfo][ver_img_5.13.0]][lnk_5.13.0]                                                                                     | [![imgSizeInfo][size_img_5.13.0]][lnk_5.13.0] | [![imgLayerInfo][layers_img_5.13.0]][lnk_5.13.0] |
+| [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.7]][lnk_5.12.7]                                             | [![imgSizeInfo][size_img_5.12.7]][lnk_5.12.7] | [![imgLayerInfo][layers_img_5.12.7]][lnk_5.12.7] |
+| [![imgVerInfo][ver_img_5.12.6]][lnk_5.12.6]                                                                                     | [![imgSizeInfo][size_img_5.12.6]][lnk_5.12.6] | [![imgLayerInfo][layers_img_5.12.6]][lnk_5.12.6] |
+| [![imgVerInfo][ver_img_5.12.5]][lnk_5.12.5]                                                                                     | [![imgSizeInfo][size_img_5.12.5]][lnk_5.12.5] | [![imgLayerInfo][layers_img_5.12.5]][lnk_5.12.5] |
+| [![imgVerInfo][ver_img_5.12.4]][lnk_5.12.4]                                                                                     | [![imgSizeInfo][size_img_5.12.4]][lnk_5.12.4] | [![imgLayerInfo][layers_img_5.12.4]][lnk_5.12.4] |
+| [![imgVerInfo][ver_img_5.12.3]][lnk_5.12.3]                                                                                     | [![imgSizeInfo][size_img_5.12.3]][lnk_5.12.3] | [![imgLayerInfo][layers_img_5.12.3]][lnk_5.12.3] |
+| [![imgVerInfo][ver_img_5.12.2]][lnk_5.12.2]                                                                                     | [![imgSizeInfo][size_img_5.12.2]][lnk_5.12.2] | [![imgLayerInfo][layers_img_5.12.2]][lnk_5.12.2] |
+| [![imgVerInfo][ver_img_5.12.1]][lnk_5.12.1]                                                                                     | [![imgSizeInfo][size_img_5.12.1]][lnk_5.12.1] | [![imgLayerInfo][layers_img_5.12.1]][lnk_5.12.1] |
+| [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0]                                                                                     | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0] | [![imgLayerInfo][layers_img_5.12.0]][lnk_5.12.0] |
+| [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3] | [![imgLayerInfo][layers_img_5.11.3]][lnk_5.11.3] |
+| [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                                                                     | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2] | [![imgLayerInfo][layers_img_5.11.2]][lnk_5.11.2] |
+| [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                                                                     | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1] | [![imgLayerInfo][layers_img_5.11.1]][lnk_5.11.1] |
+| [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                                                                     | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0] | [![imgLayerInfo][layers_img_5.11.0]][lnk_5.11.0] |
+| [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]                                             | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1] | [![imgLayerInfo][layers_img_5.10.1]][lnk_5.10.1] |
+| [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                                                                     | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0] | [![imgLayerInfo][layers_img_5.10.0]][lnk_5.10.0] |
+| [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.9]][lnk_5.9.9]                                                 | [![imgSizeInfo][size_img_5.9.9]][lnk_5.9.9]   | [![imgLayerInfo][layers_img_5.9.9]][lnk_5.9.9]   |
+| [![imgVerInfo][ver_img_5.9.8]][lnk_5.9.8]                                                                                       | [![imgSizeInfo][size_img_5.9.8]][lnk_5.9.8]   | [![imgLayerInfo][layers_img_5.9.8]][lnk_5.9.8]   |
+| [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                                                       | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]   | [![imgLayerInfo][layers_img_5.9.7]][lnk_5.9.7]   |
+| [![imgVerInfo][ver_img_5.9.6]][lnk_5.9.6]                                                                                       | [![imgSizeInfo][size_img_5.9.6]][lnk_5.9.6]   | [![imgLayerInfo][layers_img_5.9.6]][lnk_5.9.6]   |
+| [![imgVerInfo][ver_img_5.9.5]][lnk_5.9.5]                                                                                       | [![imgSizeInfo][size_img_5.9.5]][lnk_5.9.5]   | [![imgLayerInfo][layers_img_5.9.5]][lnk_5.9.5]   |
+| [![imgVerInfo][ver_img_5.9.4]][lnk_5.9.4]                                                                                       | [![imgSizeInfo][size_img_5.9.4]][lnk_5.9.4]   | [![imgLayerInfo][layers_img_5.9.4]][lnk_5.9.4]   |
+| [![imgVerInfo][ver_img_5.9.3]][lnk_5.9.3]                                                                                       | [![imgSizeInfo][size_img_5.9.3]][lnk_5.9.3]   | [![imgLayerInfo][layers_img_5.9.3]][lnk_5.9.3]   |
+| [![imgVerInfo][ver_img_5.9.2]][lnk_5.9.2]                                                                                       | [![imgSizeInfo][size_img_5.9.2]][lnk_5.9.2]   | [![imgLayerInfo][layers_img_5.9.2]][lnk_5.9.2]   |
+| [![imgVerInfo][ver_img_5.9.1]][lnk_5.9.1]                                                                                       | [![imgSizeInfo][size_img_5.9.1]][lnk_5.9.1]   | [![imgLayerInfo][layers_img_5.9.1]][lnk_5.9.1]   |
+| [![imgVerInfo][ver_img_5.9.0]][lnk_5.9.0]                                                                                       | [![imgSizeInfo][size_img_5.9.0]][lnk_5.9.0]   | [![imgLayerInfo][layers_img_5.9.0]][lnk_5.9.0]   |
+| [![imgVerInfo][ver_img_5.6]][lnk_5.6] [![imgVerInfo][ver_img_5.6.3]][lnk_5.6.3]                                                 | [![imgSizeInfo][size_img_5.6.3]][lnk_5.6.3]   | [![imgLayerInfo][layers_img_5.6.3]][lnk_5.6.3]   |
+| [![imgVerInfo][ver_img_5.6.2]][lnk_5.6.2]                                                                                       | [![imgSizeInfo][size_img_5.6.2]][lnk_5.6.2]   | [![imgLayerInfo][layers_img_5.6.2]][lnk_5.6.2]   |
+| [![imgVerInfo][ver_img_5.6.1-1]][lnk_5.6.1-1] [![imgVerInfo][ver_img_5.6.1]][lnk_5.6.1]                                         | [![imgSizeInfo][size_img_5.6.1]][lnk_5.6.1]   | [![imgLayerInfo][layers_img_5.6.1]][lnk_5.6.1]   |
+| [![imgVerInfo][ver_img_5.6.0]][lnk_5.6.0]                                                                                       | [![imgSizeInfo][size_img_5.6.0]][lnk_5.6.0]   | [![imgLayerInfo][layers_img_5.6.0]][lnk_5.6.0]   |
 
 [ver_img_latest]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:latest.svg
-[size_img_latest]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:latest.svg
+[size_img_latest]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/latest
+[layers_img_latest]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/latest
 [lnk_latest]: https://microbadger.com/images/darkmattercoder/qt-build:latest
 
 [ver_img_5.14]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.14.svg
-[size_img_5.14]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.14.svg
+[size_img_5.14]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.14
+[layers_img_5.14]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.14
 [lnk_5.14]: https://microbadger.com/images/darkmattercoder/qt-build:5.14
 
 [ver_img_5.14.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.14.1.svg
-[size_img_5.14.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.14.1.svg
+[size_img_5.14.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.14.1
+[layers_img_5.14.1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.14.1
 [lnk_5.14.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.14.1
 
 [ver_img_5.14.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.14.0.svg
-[size_img_5.14.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.14.0.svg
+[size_img_5.14.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.14.0
+[layers_img_5.14.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.14.0
 [lnk_5.14.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.14.0
 
 [ver_img_5.13]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.13.svg
-[size_img_5.13]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.13.svg
+[size_img_5.13]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.13
+[layers_img_5.13]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.13
 [lnk_5.13]: https://microbadger.com/images/darkmattercoder/qt-build:5.13
 
 [ver_img_5.13.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.13.2.svg
-[size_img_5.13.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.13.2.svg
+[size_img_5.13.2]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.13.2
+[layers_img_5.13.2]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.13.2
 [lnk_5.13.2]: https://microbadger.com/images/darkmattercoder/qt-build:5.13.2
 
 [ver_img_5.13.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.13.1.svg
-[size_img_5.13.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.13.1.svg
+[size_img_5.13.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.13.1
+[layers_img_5.13.1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.13.1
 [lnk_5.13.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.13.1
 
 [ver_img_5.13.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.13.0.svg
-[size_img_5.13.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.13.0.svg
+[size_img_5.13.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.13.0
+[layers_img_5.13.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.13.0
 [lnk_5.13.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.13.0
 
 [ver_img_5.12]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.svg
-[size_img_5.12]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.svg
+[size_img_5.12]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12
+[layers_img_5.12]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12
 [lnk_5.12]: https://microbadger.com/images/darkmattercoder/qt-build:5.12
 
 [ver_img_5.12.7]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.7.svg
-[size_img_5.12.7]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.7.svg
+[size_img_5.12.7]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.7
+[layers_img_5.12.7]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.7
 [lnk_5.12.7]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.7
 
 [ver_img_5.12.6]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.6.svg
-[size_img_5.12.6]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.6.svg
+[size_img_5.12.6]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.6
+[layers_img_5.12.6]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.6
 [lnk_5.12.6]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.6
 
 [ver_img_5.12.5]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.5.svg
-[size_img_5.12.5]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.5.svg
+[size_img_5.12.5]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.5
+[layers_img_5.12.5]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.5
 [lnk_5.12.5]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.5
 
 [ver_img_5.12.4]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.4.svg
-[size_img_5.12.4]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.4.svg
+[size_img_5.12.4]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.4
+[layers_img_5.12.4]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.4
 [lnk_5.12.4]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.4
 
 [ver_img_5.12.3]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.3.svg
-[size_img_5.12.3]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.3.svg
+[size_img_5.12.3]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.3
+[layers_img_5.12.3]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.3
 [lnk_5.12.3]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.3
 
 [ver_img_5.12.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.2.svg
-[size_img_5.12.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.2.svg
+[size_img_5.12.2]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.2
+[layers_img_5.12.2]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.2
 [lnk_5.12.2]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.2
 
 [ver_img_5.12.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.1.svg
-[size_img_5.12.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.1.svg
+[size_img_5.12.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.1
+[layers_img_5.12.1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.1
 [lnk_5.12.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.1
 
 [ver_img_5.12.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.0.svg
-[size_img_5.12.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.12.0.svg
+[size_img_5.12.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.0
+[layers_img_5.12.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.0
 [lnk_5.12.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.0
 
 [ver_img_5.11]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.11.svg
-[size_img_5.11]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.11.svg
+[size_img_5.11]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.11
+[layers_img_5.11]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.11
 [lnk_5.11]: https://microbadger.com/images/darkmattercoder/qt-build:5.11
 
 [ver_img_5.11.3]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.11.3.svg
-[size_img_5.11.3]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.11.3.svg
+[size_img_5.11.3]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.11.3
+[layers_img_5.11.3]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.11.3
 [lnk_5.11.3]: https://microbadger.com/images/darkmattercoder/qt-build:5.11.3
 
 [ver_img_5.11.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.11.2.svg
-[size_img_5.11.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.11.2.svg
+[size_img_5.11.2]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.11.2
+[layers_img_5.11.2]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.11.2
 [lnk_5.11.2]: https://microbadger.com/images/darkmattercoder/qt-build:5.11.2
 
 [ver_img_5.11.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.11.1.svg
-[size_img_5.11.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.11.1.svg
+[size_img_5.11.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.11.1
+[layers_img_5.11.1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.11.1
 [lnk_5.11.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.11.1
 
 [ver_img_5.11.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.11.0.svg
-[size_img_5.11.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.11.0.svg
+[size_img_5.11.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.11.0
+[layers_img_5.11.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.11.0
 [lnk_5.11.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.11.0
 
 [ver_img_5.10]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.10.svg
-[size_img_5.10]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.10.svg
+[size_img_5.10]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.10
+[layers_img_5.10]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.10
 [lnk_5.10]: https://microbadger.com/images/darkmattercoder/qt-build:5.10
 
 [ver_img_5.10.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.10.1.svg
-[size_img_5.10.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.10.1.svg
+[size_img_5.10.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.10.1
+[layers_img_5.10.1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.10.1
 [lnk_5.10.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.10.1
 
 [ver_img_5.10.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.10.0.svg
-[size_img_5.10.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.10.0.svg
+[size_img_5.10.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.10.0
+[layers_img_5.10.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.10.0
 [lnk_5.10.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.10.0
 
 [ver_img_5.9]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.svg
-[size_img_5.9]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.svg
+[size_img_5.9]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9
+[layers_img_5.9]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9
 [lnk_5.9]: https://microbadger.com/images/darkmattercoder/qt-build:5.9
 
 [ver_img_5.9.9]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.9.svg
-[size_img_5.9.9]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.9.svg
+[size_img_5.9.9]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.9
+[layers_img_5.9.9]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.9
 [lnk_5.9.9]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.9
 
 [ver_img_5.9.8]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.8.svg
-[size_img_5.9.8]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.8.svg
+[size_img_5.9.8]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.8
+[layers_img_5.9.8]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.8
 [lnk_5.9.8]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.8
 
 [ver_img_5.9.7]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.7.svg
-[size_img_5.9.7]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.7.svg
+[size_img_5.9.7]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.7
+[layers_img_5.9.7]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.7
 [lnk_5.9.7]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.7
 
 [ver_img_5.9.6]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.6.svg
-[size_img_5.9.6]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.6.svg
+[size_img_5.9.6]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.6
+[layers_img_5.9.6]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.6
 [lnk_5.9.6]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.6
 
 [ver_img_5.9.5]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.5.svg
-[size_img_5.9.5]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.5.svg
+[size_img_5.9.5]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.5
+[layers_img_5.9.5]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.5
 [lnk_5.9.5]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.5
 
 [ver_img_5.9.4]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.4.svg
-[size_img_5.9.4]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.4.svg
+[size_img_5.9.4]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.4
+[layers_img_5.9.4]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.4
 [lnk_5.9.4]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.4
 
 [ver_img_5.9.3]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.3.svg
-[size_img_5.9.3]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.3.svg
+[size_img_5.9.3]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.3
+[layers_img_5.9.3]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.3
 [lnk_5.9.3]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.3
 
 [ver_img_5.9.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.2.svg
-[size_img_5.9.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.2.svg
+[size_img_5.9.2]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.2
+[layers_img_5.9.2]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.2
 [lnk_5.9.2]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.2
 
 [ver_img_5.9.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.1.svg
-[size_img_5.9.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.1.svg
+[size_img_5.9.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.1
+[layers_img_5.9.1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.1
 [lnk_5.9.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.1
 
 [ver_img_5.9.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.9.0.svg
-[size_img_5.9.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.9.0.svg
+[size_img_5.9.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.9.0
+[layers_img_5.9.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.9.0
 [lnk_5.9.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.9.0
 
 [ver_img_5.6]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.svg
-[size_img_5.6]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.svg
+[size_img_5.6]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.6
+[layers_img_5.6]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.6
 [lnk_5.6]: https://microbadger.com/images/darkmattercoder/qt-build:5.6
 
 [ver_img_5.6.3]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.3.svg
-[size_img_5.6.3]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.3.svg
+[size_img_5.6.3]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.6.3
+[layers_img_5.6.3]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.6.3
 [lnk_5.6.3]: https://microbadger.com/images/darkmattercoder/qt-build:5.6.3
 
 [ver_img_5.6.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.2.svg
-[size_img_5.6.2]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.2.svg
+[size_img_5.6.2]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.6.2
+[layers_img_5.6.2]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.6.2
 [lnk_5.6.2]: https://microbadger.com/images/darkmattercoder/qt-build:5.6.2
 
 [ver_img_5.6.1-1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.1-1.svg
-[size_img_5.6.1-1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.1-1.svg
+[size_img_5.6.1-1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.6.1-1
+[layers_img_5.6.1-1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.6.1-1
 [lnk_5.6.1-1]: https://microbadger.com/images/darkmattercoder/qt-build:5.6.1-1
 
 [ver_img_5.6.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.1.svg
-[size_img_5.6.1]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.1.svg
+[size_img_5.6.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.6.1
+[layers_img_5.6.1]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.6.1
 [lnk_5.6.1]: https://microbadger.com/images/darkmattercoder/qt-build:5.6.1
 
 [ver_img_5.6.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.6.0.svg
-[size_img_5.6.0]: https://images.microbadger.com/badges/image/darkmattercoder/qt-build:5.6.0.svg
+[size_img_5.6.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.6.0
+[layers_img_5.6.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.6.0
 [lnk_5.6.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.6.0
 
 ## Contributions
