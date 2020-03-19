@@ -1,7 +1,8 @@
 # qt-build
 
 [![Build Status](https://travis-ci.com/darkmattercoder/qt-build.svg?branch=deploy)](https://travis-ci.com/darkmattercoder/qt-build)
-[![Image information](https://images.microbadger.com/badges/image/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build "Get your own image badge on microbadger.com")
+[![Image Size information](https://img.shields.io/docker/image-size/darkmattercoder/qt-build/latest)](https://microbadger.com/images/darkmattercoder/qt-build)
+[![Image Layers information](https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/latest)](https://microbadger.com/images/darkmattercoder/qt-build)
 [![Image version information](https://images.microbadger.com/badges/version/darkmattercoder/qt-build.svg)](https://microbadger.com/images/darkmattercoder/qt-build)
 ![Dockerhub pulls](https://img.shields.io/docker/pulls/darkmattercoder/qt-build.svg)
 ![Dockerhub stars](https://img.shields.io/docker/stars/darkmattercoder/qt-build.svg)
