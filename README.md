@@ -82,7 +82,8 @@ All currently supported versions of `Qt` should be available as tags. I added al
 | [![imgVerInfo][ver_img_5.13]][lnk_5.13] [![imgVerInfo][ver_img_5.13.2]][lnk_5.13.2]                                             | [![imgSizeInfo][size_img_5.13.2]][lnk_5.13.2] | [![imgLayerInfo][layers_img_5.13.2]][lnk_5.13.2] |
 | [![imgVerInfo][ver_img_5.13.1]][lnk_5.13.1]                                                                                     | [![imgSizeInfo][size_img_5.13.1]][lnk_5.13.1] | [![imgLayerInfo][layers_img_5.13.1]][lnk_5.13.1] |
 | [![imgVerInfo][ver_img_5.13.0]][lnk_5.13.0]                                                                                     | [![imgSizeInfo][size_img_5.13.0]][lnk_5.13.0] | [![imgLayerInfo][layers_img_5.13.0]][lnk_5.13.0] |
-| [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.7]][lnk_5.12.7]                                             | [![imgSizeInfo][size_img_5.12.7]][lnk_5.12.7] | [![imgLayerInfo][layers_img_5.12.7]][lnk_5.12.7] |
+| [![imgVerInfo][ver_img_5.12]][lnk_5.12] [![imgVerInfo][ver_img_5.12.8]][lnk_5.12.8]                                             | [![imgSizeInfo][size_img_5.12.8]][lnk_5.12.8] | [![imgLayerInfo][layers_img_5.12.8]][lnk_5.12.8] |
+| [![imgVerInfo][ver_img_5.12.7]][lnk_5.12.7]                                                                                     | [![imgSizeInfo][size_img_5.12.7]][lnk_5.12.7] | [![imgLayerInfo][layers_img_5.12.7]][lnk_5.12.7] |
 | [![imgVerInfo][ver_img_5.12.6]][lnk_5.12.6]                                                                                     | [![imgSizeInfo][size_img_5.12.6]][lnk_5.12.6] | [![imgLayerInfo][layers_img_5.12.6]][lnk_5.12.6] |
 | [![imgVerInfo][ver_img_5.12.5]][lnk_5.12.5]                                                                                     | [![imgSizeInfo][size_img_5.12.5]][lnk_5.12.5] | [![imgLayerInfo][layers_img_5.12.5]][lnk_5.12.5] |
 | [![imgVerInfo][ver_img_5.12.4]][lnk_5.12.4]                                                                                     | [![imgSizeInfo][size_img_5.12.4]][lnk_5.12.4] | [![imgLayerInfo][layers_img_5.12.4]][lnk_5.12.4] |
@@ -160,6 +161,11 @@ All currently supported versions of `Qt` should be available as tags. I added al
 [size_img_5.12]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12
 [layers_img_5.12]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12
 [lnk_5.12]: https://microbadger.com/images/darkmattercoder/qt-build:5.12
+
+[ver_img_5.12.8]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.8.svg
+[size_img_5.12.8]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.8
+[layers_img_5.12.8]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.12.8
+[lnk_5.12.8]: https://microbadger.com/images/darkmattercoder/qt-build:5.12.8
 
 [ver_img_5.12.7]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.12.7.svg
 [size_img_5.12.7]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.12.7
