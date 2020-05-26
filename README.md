@@ -76,7 +76,8 @@ All currently supported versions of `Qt` should be available as tags. I added al
 
 | Tags                                                                                                                            | Size                                          | Layers                                           |
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |
-| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.14]][lnk_5.14] [![imgVerInfo][ver_img_5.14.2]][lnk_5.14.2] | [![imgSizeInfo][size_img_5.14.2]][lnk_5.14.2] | [![imgLayerInfo][layers_img_5.14.2]][lnk_5.14.2] |
+| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.15]][lnk_5.15] [![imgVerInfo][ver_img_5.15.0]][lnk_5.15.0] | [![imgSizeInfo][size_img_5.15.0]][lnk_5.15.0] | [![imgLayerInfo][layers_img_5.15.0]][lnk_5.15.0] |
+| [![imgVerInfo][ver_img_5.14]][lnk_5.14] [![imgVerInfo][ver_img_5.14.2]][lnk_5.14.2]                                             | [![imgSizeInfo][size_img_5.14.2]][lnk_5.14.2] | [![imgLayerInfo][layers_img_5.14.2]][lnk_5.14.2] |
 | [![imgVerInfo][ver_img_5.14.1]][lnk_5.14.1]                                                                                     | [![imgSizeInfo][size_img_5.14.1]][lnk_5.14.1] | [![imgLayerInfo][layers_img_5.14.1]][lnk_5.14.1] |
 | [![imgVerInfo][ver_img_5.14.0]][lnk_5.14.0]                                                                                     | [![imgSizeInfo][size_img_5.14.0]][lnk_5.14.0] | [![imgLayerInfo][layers_img_5.14.0]][lnk_5.14.0] |
 | [![imgVerInfo][ver_img_5.13]][lnk_5.13] [![imgVerInfo][ver_img_5.13.2]][lnk_5.13.2]                                             | [![imgSizeInfo][size_img_5.13.2]][lnk_5.13.2] | [![imgLayerInfo][layers_img_5.13.2]][lnk_5.13.2] |
@@ -116,6 +117,16 @@ All currently supported versions of `Qt` should be available as tags. I added al
 [size_img_latest]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/latest
 [layers_img_latest]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/latest
 [lnk_latest]: https://microbadger.com/images/darkmattercoder/qt-build:latest
+
+[ver_img_5.15]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.15.svg
+[size_img_5.15]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.15
+[layers_img_5.15]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.15
+[lnk_5.15]: https://microbadger.com/images/darkmattercoder/qt-build:5.15
+
+[ver_img_5.15.0]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.15.0.svg
+[size_img_5.15.0]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.15.0
+[layers_img_5.15.0]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.15.0
+[lnk_5.15.0]: https://microbadger.com/images/darkmattercoder/qt-build:5.15.0
 
 [ver_img_5.14]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.14.svg
 [size_img_5.14]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.14
