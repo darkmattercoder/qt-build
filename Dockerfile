@@ -21,6 +21,8 @@ ENV QT_PREFIX=/usr/local
 # Install all build dependencies
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recommends install \
 	ca-certificates \
+	# sudo to be able to modify the container as the user, if needed.
+	sudo \
 	curl \
 	python \
 	gperf \
@@ -70,6 +72,10 @@ RUN if [ ${USER_GID} ]; then \
 	else \
 	useradd -g ${QT_USERNAME} ${QT_USERNAME}; \
 	fi && mkdir /home/${QT_USERNAME}
+
+# make sure the user is able to sudo if needed
+RUN adduser ${QT_USERNAME} sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # build stage
 FROM base as builder
