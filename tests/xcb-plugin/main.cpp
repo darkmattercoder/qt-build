@@ -2,7 +2,8 @@
 #include <QDir>
 //#define PLUGIN_DIR "plugindir"
 int main() {
-  QString platformDir = QString(PLUGIN_DIR) + "\\platforms";
+  QString platformDir = QString(PLUGIN_DIR) + "/platforms";
+  qDebug() << "searching plugin in directory " << platformDir;
   QDir pluginDir(platformDir);
   QStringList platformPlugins = pluginDir.entryList();
   qDebug() << "plugins found in file system: " << platformPlugins;
