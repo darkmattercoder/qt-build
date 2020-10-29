@@ -52,6 +52,16 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recomme
 	libx11-xcb-dev \
 	libxcb-glx0-dev \
 	libxkbcommon-x11-dev \
+	libxcb-shm0-dev \
+	libxcb-icccm4-dev \
+	libxcb-image0-dev \
+	libxcb-keysyms1-dev \
+	libxcb-render-util0-dev \
+	libxcb-xinerama0-dev \
+	x11proto-record-dev \
+	libxtst-dev \
+	libatspi2.0-dev \
+	libatk-bridge2.0-dev \
 	# bash needed for argument substitution in entrypoint
 	bash \
 	# since 5.14.0 we apparently need libdbus-1-dev and libnss3-dev

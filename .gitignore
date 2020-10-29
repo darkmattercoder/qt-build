@@ -19,3 +19,5 @@ Makefile
 run-tests.sh
 tests.pro
 /.qmake.stash
+tests/build-*
+*.pro.user*
