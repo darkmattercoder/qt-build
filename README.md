@@ -76,7 +76,8 @@ All currently supported versions of `Qt` should be available as tags. I added al
 
 | Tags                                                                                                                            | Size                                            | Layers                                             |
 | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------- |
-| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.15]][lnk_5.15] [![imgVerInfo][ver_img_5.15.1]][lnk_5.15.1] | [![imgSizeInfo][size_img_5.15.1]][lnk_5.15.1]   | [![imgLayerInfo][layers_img_5.15.1]][lnk_5.15.1]   |
+| [![imgVerInfo][ver_img_latest]][lnk_latest] [![imgVerInfo][ver_img_5.15]][lnk_5.15] [![imgVerInfo][ver_img_5.15.2]][lnk_5.15.2] | [![imgSizeInfo][size_img_5.15.2]][lnk_5.15.2]   | [![imgLayerInfo][layers_img_5.15.2]][lnk_5.15.2]   |
+| [![imgVerInfo][ver_img_5.15.1]][lnk_5.15.1]                                                                                     | [![imgSizeInfo][size_img_5.15.1]][lnk_5.15.1]   | [![imgLayerInfo][layers_img_5.15.1]][lnk_5.15.1]   |
 | [![imgVerInfo][ver_img_5.15.0]][lnk_5.15.0]                                                                                     | [![imgSizeInfo][size_img_5.15.0]][lnk_5.15.0]   | [![imgLayerInfo][layers_img_5.15.0]][lnk_5.15.0]   |
 | [![imgVerInfo][ver_img_5.14]][lnk_5.14] [![imgVerInfo][ver_img_5.14.2]][lnk_5.14.2]                                             | [![imgSizeInfo][size_img_5.14.2]][lnk_5.14.2]   | [![imgLayerInfo][layers_img_5.14.2]][lnk_5.14.2]   |
 | [![imgVerInfo][ver_img_5.14.1]][lnk_5.14.1]                                                                                     | [![imgSizeInfo][size_img_5.14.1]][lnk_5.14.1]   | [![imgLayerInfo][layers_img_5.14.1]][lnk_5.14.1]   |
@@ -125,6 +126,11 @@ All currently supported versions of `Qt` should be available as tags. I added al
 [size_img_5.15]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.15
 [layers_img_5.15]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.15
 [lnk_5.15]: https://microbadger.com/images/darkmattercoder/qt-build:5.15
+
+[ver_img_5.15.2]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.15.2.svg
+[size_img_5.15.2]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.15.2
+[layers_img_5.15.2]: https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/5.15.2
+[lnk_5.15.2]: https://microbadger.com/images/darkmattercoder/qt-build:5.15.2
 
 [ver_img_5.15.1]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:5.15.1.svg
 [size_img_5.15.1]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/5.15.1
