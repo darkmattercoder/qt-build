@@ -58,6 +58,7 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y --no-install-recomme
 	libxcb-keysyms1-dev \
 	libxcb-render-util0-dev \
 	libxcb-xinerama0-dev \
+	libxcb-util-dev \
 	x11proto-record-dev \
 	libxtst-dev \
 	libatspi2.0-dev \
