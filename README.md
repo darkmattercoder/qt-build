@@ -15,6 +15,11 @@ Find the sources on [Github](https://github.com/darkmattercoder/qt-build)
 
 Automated builds will run weekly, thus changes in the underlying base images will reach the registry within that time.
 
+## What about Qt 6?
+
+When I started this project in 2018, I had no Idea, that it would be useful for so many of you. The Qt company released Qt 6.0.0 on December 08, 2020. A lot of changes have been introduced in the code base and mainly Qt decided to finally get rid of `qmake` as build system. Since this is a siginificant change, I do not plan to provide build images for Qt 6 in this very repository. Instead, I am currently working to provide those images via a separate repository, which I do not want to include more clutter than necessary. Qt 6 is the perfect starting point for this.
+However, since the user base for the images I provide through this very repository has grown in size, I will for sure not abandon this repository and keep maintaining it at least as long as Qt 5 is officially supported. Most probably even longer. Right now, my focus however is to provide good and well usable docker images for Qt 6, which is what currently requires a bit more attention than this Qt 5 based repo. Once I feel ready, I will put a corresponding link here to make readers aware of it.
+
 ## What is missing
 
 Due to a build time limitation of 3 hours with travis ci, I unfortunately am not able to provide `qtwebengine` with my builds. Once I either get help with transferring the build pipeline to another platform, where the time limitation is not that strict, or once travis give their VMs more cores for build jobs so that the build fits in 3 hours, I can include `qtwebengine` in my builds. Until then, you have to build the image locally with the provided script (description below) and adjust the build config if you absolutely need it.
