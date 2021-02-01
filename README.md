@@ -75,9 +75,11 @@ The build arguments can entirely be omitted, resulting in a build with some defa
 
 In case you want to do a quick, customised build like I do it in the automated build process. Have a look at the self-explanatory script `build-dockerfile-local.sh`.
 
-## Available tags
+## Available and maintained tags
 
 All currently supported versions of `Qt` should be available as tags. I added also versions that have been supported at the time adding them first, but are now archived. I'd like to add other archived versions, too, but I did not yet put any effort into thet. This is no hard work though, so might be a nice ![first contribution](https://img.shields.io/badge/-first_contribution-006b75.svg)
+
+Some images have been built and are available in the dockerhub registry, but due to missing sources on the qt download servers, they cannot be built automatically anymore and thus, its base layer image is not updated anymore. You should consider that when you want to use them. Find them in the second table below.
 
 | Tags                                                                                                                            | Size                                            | Layers                                             |
 | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------- |
@@ -101,12 +103,6 @@ All currently supported versions of `Qt` should be available as tags. I added al
 | [![imgVerInfo][ver_img_5.12.2]][lnk_5.12.2]                                                                                     | [![imgSizeInfo][size_img_5.12.2]][lnk_5.12.2]   | [![imgLayerInfo][layers_img_5.12.2]][lnk_5.12.2]   |
 | [![imgVerInfo][ver_img_5.12.1]][lnk_5.12.1]                                                                                     | [![imgSizeInfo][size_img_5.12.1]][lnk_5.12.1]   | [![imgLayerInfo][layers_img_5.12.1]][lnk_5.12.1]   |
 | [![imgVerInfo][ver_img_5.12.0]][lnk_5.12.0]                                                                                     | [![imgSizeInfo][size_img_5.12.0]][lnk_5.12.0]   | [![imgLayerInfo][layers_img_5.12.0]][lnk_5.12.0]   |
-| [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]                                             | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3]   | [![imgLayerInfo][layers_img_5.11.3]][lnk_5.11.3]   |
-| [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                                                                     | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2]   | [![imgLayerInfo][layers_img_5.11.2]][lnk_5.11.2]   |
-| [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                                                                     | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1]   | [![imgLayerInfo][layers_img_5.11.1]][lnk_5.11.1]   |
-| [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                                                                     | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0]   | [![imgLayerInfo][layers_img_5.11.0]][lnk_5.11.0]   |
-| [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]                                             | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1]   | [![imgLayerInfo][layers_img_5.10.1]][lnk_5.10.1]   |
-| [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                                                                     | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0]   | [![imgLayerInfo][layers_img_5.10.0]][lnk_5.10.0]   |
 | [![imgVerInfo][ver_img_5.9]][lnk_5.9] [![imgVerInfo][ver_img_5.9.9]][lnk_5.9.9]                                                 | [![imgSizeInfo][size_img_5.9.9]][lnk_5.9.9]     | [![imgLayerInfo][layers_img_5.9.9]][lnk_5.9.9]     |
 | [![imgVerInfo][ver_img_5.9.8]][lnk_5.9.8]                                                                                       | [![imgSizeInfo][size_img_5.9.8]][lnk_5.9.8]     | [![imgLayerInfo][layers_img_5.9.8]][lnk_5.9.8]     |
 | [![imgVerInfo][ver_img_5.9.7]][lnk_5.9.7]                                                                                       | [![imgSizeInfo][size_img_5.9.7]][lnk_5.9.7]     | [![imgLayerInfo][layers_img_5.9.7]][lnk_5.9.7]     |
@@ -117,10 +113,21 @@ All currently supported versions of `Qt` should be available as tags. I added al
 | [![imgVerInfo][ver_img_5.9.2]][lnk_5.9.2]                                                                                       | [![imgSizeInfo][size_img_5.9.2]][lnk_5.9.2]     | [![imgLayerInfo][layers_img_5.9.2]][lnk_5.9.2]     |
 | [![imgVerInfo][ver_img_5.9.1]][lnk_5.9.1]                                                                                       | [![imgSizeInfo][size_img_5.9.1]][lnk_5.9.1]     | [![imgLayerInfo][layers_img_5.9.1]][lnk_5.9.1]     |
 | [![imgVerInfo][ver_img_5.9.0]][lnk_5.9.0]                                                                                       | [![imgSizeInfo][size_img_5.9.0]][lnk_5.9.0]     | [![imgLayerInfo][layers_img_5.9.0]][lnk_5.9.0]     |
-| [![imgVerInfo][ver_img_5.6]][lnk_5.6] [![imgVerInfo][ver_img_5.6.3]][lnk_5.6.3]                                                 | [![imgSizeInfo][size_img_5.6.3]][lnk_5.6.3]     | [![imgLayerInfo][layers_img_5.6.3]][lnk_5.6.3]     |
-| [![imgVerInfo][ver_img_5.6.2]][lnk_5.6.2]                                                                                       | [![imgSizeInfo][size_img_5.6.2]][lnk_5.6.2]     | [![imgLayerInfo][layers_img_5.6.2]][lnk_5.6.2]     |
-| [![imgVerInfo][ver_img_5.6.1-1]][lnk_5.6.1-1] [![imgVerInfo][ver_img_5.6.1]][lnk_5.6.1]                                         | [![imgSizeInfo][size_img_5.6.1]][lnk_5.6.1]     | [![imgLayerInfo][layers_img_5.6.1]][lnk_5.6.1]     |
-| [![imgVerInfo][ver_img_5.6.0]][lnk_5.6.0]                                                                                       | [![imgSizeInfo][size_img_5.6.0]][lnk_5.6.0]     | [![imgLayerInfo][layers_img_5.6.0]][lnk_5.6.0]     |
+
+## Available but unmaintained tags
+
+| Tags                                                                                    | Size                                          | Layers                                           |
+| --------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |
+| [![imgVerInfo][ver_img_5.11]][lnk_5.11] [![imgVerInfo][ver_img_5.11.3]][lnk_5.11.3]     | [![imgSizeInfo][size_img_5.11.3]][lnk_5.11.3] | [![imgLayerInfo][layers_img_5.11.3]][lnk_5.11.3] |
+| [![imgVerInfo][ver_img_5.11.2]][lnk_5.11.2]                                             | [![imgSizeInfo][size_img_5.11.2]][lnk_5.11.2] | [![imgLayerInfo][layers_img_5.11.2]][lnk_5.11.2] |
+| [![imgVerInfo][ver_img_5.11.1]][lnk_5.11.1]                                             | [![imgSizeInfo][size_img_5.11.1]][lnk_5.11.1] | [![imgLayerInfo][layers_img_5.11.1]][lnk_5.11.1] |
+| [![imgVerInfo][ver_img_5.11.0]][lnk_5.11.0]                                             | [![imgSizeInfo][size_img_5.11.0]][lnk_5.11.0] | [![imgLayerInfo][layers_img_5.11.0]][lnk_5.11.0] |
+| [![imgVerInfo][ver_img_5.10]][lnk_5.10] [![imgVerInfo][ver_img_5.10.1]][lnk_5.10.1]     | [![imgSizeInfo][size_img_5.10.1]][lnk_5.10.1] | [![imgLayerInfo][layers_img_5.10.1]][lnk_5.10.1] |
+| [![imgVerInfo][ver_img_5.10.0]][lnk_5.10.0]                                             | [![imgSizeInfo][size_img_5.10.0]][lnk_5.10.0] | [![imgLayerInfo][layers_img_5.10.0]][lnk_5.10.0] |
+| [![imgVerInfo][ver_img_5.6]][lnk_5.6] [![imgVerInfo][ver_img_5.6.3]][lnk_5.6.3]         | [![imgSizeInfo][size_img_5.6.3]][lnk_5.6.3]   | [![imgLayerInfo][layers_img_5.6.3]][lnk_5.6.3]   |
+| [![imgVerInfo][ver_img_5.6.2]][lnk_5.6.2]                                               | [![imgSizeInfo][size_img_5.6.2]][lnk_5.6.2]   | [![imgLayerInfo][layers_img_5.6.2]][lnk_5.6.2]   |
+| [![imgVerInfo][ver_img_5.6.1-1]][lnk_5.6.1-1] [![imgVerInfo][ver_img_5.6.1]][lnk_5.6.1] | [![imgSizeInfo][size_img_5.6.1]][lnk_5.6.1]   | [![imgLayerInfo][layers_img_5.6.1]][lnk_5.6.1]   |
+| [![imgVerInfo][ver_img_5.6.0]][lnk_5.6.0]                                               | [![imgSizeInfo][size_img_5.6.0]][lnk_5.6.0]   | [![imgLayerInfo][layers_img_5.6.0]][lnk_5.6.0]   |
 
 [ver_img_latest]: https://images.microbadger.com/badges/version/darkmattercoder/qt-build:latest.svg
 [size_img_latest]: https://img.shields.io/docker/image-size/darkmattercoder/qt-build/latest
