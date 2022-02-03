@@ -1,5 +1,15 @@
 # qt-build
 
+## Warning: Unmaintained
+
+As the build infrastructure provided by travis ci has entirely stopped working for open source projects. New auto builds aren't done anymore.
+The base images on dockerhub are not updated regularly. As I still cannot fully understand how to easily transfer the travis-ci workflow to github actions, I cannot provide automated builds.
+Automating the builds of the images is a key feature for me. But I am simply not able to get that done at the moment. So I declare this project unmaintained because I have no interest anymore to put additional effort into it.
+
+I am still willing to accept pull requests though. **However, no ones that do not perform an auto build using actions**. If someone is able to fix the ci/cd for me, I am willing to add at least the missing `Qt 5` versions.
+
+The recipe to build the images by yourself is well documented in here, so that for any present qt version configured, you simply should be able to get working images by building them the way I do.
+
 [![Build Status](https://travis-ci.com/darkmattercoder/qt-build.svg?branch=deploy)](https://travis-ci.com/darkmattercoder/qt-build)
 [![Image Size information](https://img.shields.io/docker/image-size/darkmattercoder/qt-build/latest)](https://microbadger.com/images/darkmattercoder/qt-build)
 [![Image Layers information](https://img.shields.io/microbadger/layers/darkmattercoder/qt-build/latest)](https://microbadger.com/images/darkmattercoder/qt-build)
